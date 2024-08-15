@@ -1,0 +1,24 @@
+# All git steps
+0. Make sure to clone repo
+  a. git clone "repo-url"
+  b. cd repo-folder-name - (main) should appear next to file path so that you know
+1. Rebase (pull in most recent code) Use gitbase NOT powershell terminal in VS Code
+  a. git checkout main
+  b. git fetch origin main (git pull is faster) git fetch origin main is safer
+  c. git merge origin main --> Now you have the latest code
+2. Create a new branch to edit the specific file you want to edit
+  a. Git checkout -b name-of-your-branch (can't reuse branch names)
+3. Make your edits to the file and save file, either in visual studio code or in jupyter notebook
+4. Check your git status to make sure what file(s) has changed
+  a. git status
+5. Add the files (staged changes to commit)
+  a. git add file-path of changed files
+  b. git status to confirm the file was added to staging
+6. Commit your changes
+  a. git commit -m "your message/description"
+  b. You may be prompted to git config follow directions
+7. Push your changes to Origin/Upstream
+  a. Git push origin new-branch-name
+8. Create Pull Request
+9. Get peer review/approval
+10. Merge the PR/delete branch
