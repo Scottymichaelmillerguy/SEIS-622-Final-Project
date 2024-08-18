@@ -1,22 +1,54 @@
+/* This section is the css for the Header */
+* {
+  margin: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 header {
-    /*position: fixed;*/
-    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-}
-
-button {
-    margin: 20px;
+    padding: 10px 20px;
     background-color: lightgreen;
-    border-style: none;
+    position: relative;
+    text-align: center;
 }
 
-#home-button-img {
-    height: 50px;
-    width: 50px;
-    position: fixed;
-    top: 10px;
-    left: 10px;
+#store-header {
+  display: inline-block;
+  text-align: center;
 }
+
+#home_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: lightgreen;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#home_icon{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+
 
 #cart-button-img {
     height: 50px;
@@ -26,18 +58,9 @@ button {
     right: 10px;
 }
 
-#store-header {
-    display: inline-block;
-    text-align: center;
-}
-
 #department {
     display: inline-block;
     margin-left: 20px;
-}
-
-header {
-    background-color: lightgreen;
 }
 
 .department-img {
