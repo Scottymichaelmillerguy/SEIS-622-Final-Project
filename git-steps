@@ -12,7 +12,7 @@
 4. Check your git status to make sure what file(s) has changed
   a. git status
 5. Add the files (staged changes to commit)
-  a. git add file-path of changed files
+  a. git add .
   b. git status to confirm the file was added to staging
 6. Commit your changes
   a. git commit -m "your message/description"
