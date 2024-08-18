@@ -1,0 +1,33 @@
+button {
+    margin: 20px;
+    background-color: pink;
+    border-style: none;
+}
+
+#home-button-img {
+    height: 50px;
+    width: 50px;
+    
+}
+center {
+    display: inline-block;
+    
+}
+
+#store-header {
+    display: inline-block;
+}
+
+#department {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header {
+    background-color: pink;
+}
+
+.department-img {
+    display: block;
+}
+
