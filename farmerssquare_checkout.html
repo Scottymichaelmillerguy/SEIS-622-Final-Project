@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en"/>
+<html lang="en" />
+
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styleschkoutpage.css" />
 </head>
+
 <body>
     <header>
-        <img src="images/white-home-icon-transparent-png-6.png" alt="Home Icon">
-        <center><h1>Farmer's Square</h1></center>
+        <button><img id="home-button-img" href="farmerssquare.html" src="images/white-home-icon-transparent-png-6.png"
+                alt="Home Button"></button>
+        <h1 id="store-title"><img id="store-logo"
+                src="images/Gemini_Generated_Image_rob1fsrob1fsrob1.jfif"></img>Farmer's Square</h1>
+        <button id="cart-button-img"><img href="" src="" alt=""></button>
     </header>
+    <section id="Cart">
+        <section id="ReturnButton">
+            <button class="return-button" type="button">Return to Shop for More Items</button>
+        </section>
+        <h2>Your Items Cart:</h2>
+        <div class="select-all">
+            <input type="checkbox" id="selectAll" class="checkbox-item">
+            <label>Select All Items</label>
+        </div>
+        </br>
+        <div class="cart-item"></div>
+        <input type="checkbox" id="GItem1" class="checkbox-item"><label for="GItem1"><img src="" /></label>
+        <span class="item-name">Grocery Item 1 (We will make Cart Item Show Here)</span>
+        <span class="quantity-label">Quantity:</span>
+        <input type="number" class="quantity-input" min="1" value="1">
+        </div>
+        <div class="cart-item">
+            <input type="checkbox" id="GItem2" class="checkbox-item"><label for="GItem2"><img src="" /></label>
+            <span class="item-name">Grocery Item 2 (We will make Cart Item Show Here)</span>
+            <span class="quantity-label">Quantity:</span>
+            <input type="number" class="quantity-input" min="1" value="1">
+        </div>
+        <div class="cart-item">
+            <input type="checkbox" id="GItem3" class="checkbox-item"><label for="GItem3"><img src="" /></label>
+            <span class="item-name">Grocery Item 3 (We will make Cart Item Show Here)</span>
+            <span class="quantity-label">Quantity:</span>
+            <input type="number" class="quantity-input" min="1" value="1">
+        </div>
+        <div class="cart-item">
+            <input type="checkbox" id="GItem4" class="checkbox-item"><label for="GItem4"><img src="" /></label>
+            <span class="item-name">Grocery Item 4 (We will make Cart Item Show Here)</span>
+            <span class="quantity-label">Quantity:</span>
+            <input type="number" class="quantity-input" min="1" value="1">
+        </div>
+        </br>
+        <button class="delete-button" type="button">Delete All</button>
+        <br></br>
+    </section>
+    <div class="delivery-type">
+        <label for="delivery_type">
+            <h3>Delivery Type:</h3>
+        </label>
+        <select name="delivery" id="delivery_type">
+            <option value="">--Please choose a delivery type--</option>
+            <option value="shipping">Shipping</option>
+            <option value="pickup">Pickup</option>
+        </select>
+    </div>
+    <br></br>
+    <section id="Totals">
+        <h2>Order Total</h2>
+        <p class="item-total">Item Total: (Add Amount Here)</p>
+        <p class="tax-amount">Tax Amount: (Add Amount Here)</p>
+        <p class="shipping-cost">Shipping Costs: (Add Amount Here)</p>
+        <p class="total-amount">Total Payment Amount: (Add Amount Here)</p>
+    </section>
+    <div class="line-break">
+        <hr>
+    </div>
+    <form>
+        <div class="form-container">
+            <fieldset>
+                <h2>Contact Information </h2>
+                <p><label> <input type=text class="small-input" placeholder="First Name"></label> <label> <input
+                            type=text class="small-input" placeholder="Last Name"></label> </p>
+                <p><label> <input type=text class="large-input" placeholder="Email Address"></label></p>
+                <p><label> <input type=text class="large-input" placeholder="Street Address"></label></p>
+                <p><label> <input type=text class="medium-input" placeholder="Phone Number"></label></p>
+                <h2>Billing Information </h2>
+                <p><label> <input type=text class="large-input" placeholder="Credit Card Number"></label></p>
+                <p><label> <input type=text class="small-input" placeholder="Exp. Date"></label><label> <input type=text
+                            class="small-input" placeholder="CVV"></label></p>
+                <p><label> <input type=text class="large-input" placeholder="Billing Address"></label></p>
+            </fieldset>
+        </div>
+    </form>
+    <section class="paymentbtn-container" id="PaymentButton">
+        <button class="payment-button">Pay for Items</button>
+    </section>
+    <footer>
+        <p class="footer-year">2024</p>
+        <p class="creator-names">Developed by Zachary Ragone, Abdirahman & Scott Miller</p>
+    </footer>
 </body>
