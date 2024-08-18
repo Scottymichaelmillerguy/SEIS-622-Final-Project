@@ -3,15 +3,145 @@
 
 <head>
     <meta charset="utf-8">
+    <title>Farmers Square Main Page</title>
+    <link rel="stylesheet" href="css/styles_home.css">
 </head>
 
 <body>
     <header>
-        <img src="images/white-home-icon-transparent-png-6.png" alt="Home Icon">
-        <center><h1>Farmer's Square</h1></center>
-        <button></button>
-        
+        <button><img id="home-button-img" href="farmerssquare.html" src="images/white-home-icon-transparent-png-6.png" alt="Home Button"></button>
+        <h1 id="store-header">Farmer's Square </h1>
+        <button><img id="cart-button-img" href="" src="images/Shopping-Cart-PNG-Royalty-Free-Photo-3299087989.png" alt="" margin="left"></button>
     </header>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img class="slideshow_image" src="products/village_hearth_honey_wheat_bread.jpg" style="width:100%">
+    <div class="village_hearth">Village Hearth Honey Wheat Bread 2 for $5</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img class="slideshow_image" src="products/gallon_milk.jpg" style="width:100%">
+    <div class="kemps_fat_free_milk">Kemps Select Fat Free Skim Milk Now at $3.75</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img class="slideshow_image" src="products/ground_beef.jpg" style="width:100%">
+    <div class="text">80/20 3 Pound Ground Beef Now $15</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img class="slideshow_image" src="products/pineapple.jpg" style="width:100%">
+    <div class="text">Save on Pineapples at 2 for $5.50</div>
+   </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img class="slideshow_image" src="products/honey_bunches_of_oats.jpg" style="width:100%">
+    <div class="text">Honey Roasted Honey Bunches of Oats are 2 for $7</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<br/>
+<br/>
+
+<h2>Departments</h2>
+
+<br/>
+
+<div class="row">
+
+    <div class="item">
+        <a href="">
+            <img src = "images/dairy_icon.jpg" alt="Dairy Department"/>
+        </a>
+    </div>
+
+    <div class="item">
+        <a href="farmerssquare_produce.html">
+            <img src = "images/produce_icon.jpg" alt="Produce Department"/>
+        </a>
+    </div>
+
+    <div class="item">
+        <a href="farmerssquare_meat.html">
+            <img src = "images/meat_icon.png" alt="Meat Department"/>
+        </a>
+    </div>
+</div>
+
+<br/>
+    
+<div class="row">
+
+    <div class="item">
+        <a href="farmerssquare_bakery.html">
+            <img src = "images/bakery_icon.png" alt="Bakery Department"/>
+        </a>
+    </div>
+
+    <div class="item">
+        <a href="">
+            <img src = "images/pantry_icon.png" alt="Pantry Department"/>
+        </a>
+    </div>
+
+    <div class="item">
+        <a href="">
+            <img src = "images/frozen_icon.png" alt="Frozen Department"/>
+        </a>
+    </div>
+</div>
+
+</table>
+
+  <footer>
+    <p class="footer-year">2024</p>
+    <p class = "creator-names">Developed by Zachary Ragone, Abdirahman & Scott Miller</p>
+ </footer>
 </body>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 8000); // Change image every 2 seconds
+}
+    </script>
 
 </html>
