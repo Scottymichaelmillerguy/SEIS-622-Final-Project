@@ -5,12 +5,14 @@
   box-sizing: border-box;
 }
 
-html, body {
+html {
   height: 100%;
   width: 100%;
 }
 
 body {
+  height: 100%;
+  width: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -21,7 +23,7 @@ header {
     justify-content: space-between;
     width: 100%;
     padding: 10px 20px;
-    background-color: lightgreen;
+    background-color: #dbccb5;
     position: relative;
     text-align: center;
 }
@@ -36,7 +38,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: lightgreen;
+  background-color: #dbccb5;
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -69,10 +71,15 @@ header {
 
 * {box-sizing:border-box}
 
+h2 {
+  text-align: center;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 80%;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   position: relative;
   margin: auto;
 }
@@ -111,11 +118,13 @@ header {
 
 /* Caption text */
 .text {
-  color: black;
+  color: red;
+  background-color: white;
+  font-weight: bold;
   font-size: 15px;
-  padding: 8px 12px;
+  padding: 0px 0px;
   position: absolute;
-  bottom: 8px;
+  bottom: 0px;
   width: 100%;
   text-align: center;
 }
@@ -123,6 +132,7 @@ header {
 /* Number text (1/3 etc) */
 .numbertext {
   color: black;
+  font-weight: bold;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -157,7 +167,13 @@ header {
 }
 
 .slideshow_image {
+  height: inherit;
+  width: inherit;
+}
 
+.department_image {
+  height: inherit;
+  width: inherit;
 }
 
 .row {
@@ -168,6 +184,8 @@ header {
 .item {
   display: table-cell;
   vertical-align: top;
+  height: 100px;
+  width: 100px;
 }
 .item img {
   display: block;
