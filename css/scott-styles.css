@@ -226,12 +226,15 @@ h2 {
   flex-grow: 1;
   display: flex;
   justify-content: center;
+  
 }
 
 table {
+  
   width: 100%;
   border-collapse: collapse;
   text-align: left;
+  
 }
 
 td {
