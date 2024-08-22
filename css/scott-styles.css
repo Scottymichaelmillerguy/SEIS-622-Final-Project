@@ -21,9 +21,10 @@ header {
     justify-content: space-between;
     width: 100%;
     padding: 10px 20px;
-    background-color: lightgreen;
+    background-color: #dbccb5;
     position: relative;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 
@@ -32,7 +33,12 @@ a {
   text-decoration: none;
 }
 
+li a:hover {
+  color: blue;
+}
+
 table {
+  
   display: inline-block;
 }
 
@@ -60,6 +66,10 @@ h2 {
   width: 50px;
   height: 50px;
   object-fit: contain;
+}
+
+#home_icon:hover {
+  color: blue;
 }
 
 
@@ -191,8 +201,8 @@ h2 {
 }
 
 .department-img {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 }
 
 .container {
@@ -201,7 +211,7 @@ h2 {
 }
 
 .department-list {
-  width: 200px; /* Adjust width as needed */
+  width: 200px; 
   margin-right: 20px;
 }
 
@@ -226,16 +236,22 @@ h2 {
   flex-grow: 1;
   display: flex;
   justify-content: center;
+  margin-right:250px;
   
 }
 
 table {
   
-  width: 100%;
+  width: auto;
   border-collapse: collapse;
-  text-align: left;
+  text-align: center;
+  
   
 }
+
+
+
+
 
 td {
   padding: 10px;
@@ -245,10 +261,30 @@ td {
 
 .description {
   margin: 10px 0;
+  font-weight: 600;
 }
 
 .price {
+  padding: 5px;
   color: green;
-  font-weight: bold;
+  font-weight: 600;
 }
 
+.item-quantity {
+  width: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+footer {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #dbccb5;
+  
+}
+
+.footer-year, .creator-names {
+  margin-bottom: 5px;
+}
