@@ -1,7 +1,74 @@
+* {
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: lightgreen;
+    position: relative;
+    text-align: center;
+}
+
+#store-header {
+    display: inline-block;
+    text-align: center;
+}
+
+#home_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: lightgreen;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#home_icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+
+#cart-button-img {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
 button:not(.delete-button, .return-button, .payment-button) {
     margin: 20px;
     background-color: pink;
     border-style: none;
+}
+
+#Cart {
+    padding: 10px;
+}
+
+.select-all{
+    font-size:90%;
 }
 
 #ReturnButton {
@@ -16,8 +83,8 @@ button:not(.delete-button, .return-button, .payment-button) {
 }
 
 .paymentbtn-container {
-        text-align: right;
-        padding: 10px;
+    text-align: right;
+    padding: 10px;
 }
 
 .delivery-type {
@@ -25,23 +92,49 @@ button:not(.delete-button, .return-button, .payment-button) {
     right: 0;
     display: flex;
     align-items: center;
-    gap: 10px; 
+    margin-right: 5px;
+    gap: 10px;
 }
 
-.line-break{
-    margin-top: 260px;
+#contact_information {
+    padding-left: 55px;
 }
-.form-container{
-    margin-top: 0px;
+
+#billing_information {
+    padding-left: 55px;
+
+}
+
+.form-container {
+    margin-top: 225px;
+    margin-bottom: 25px;
+    line-height: 2;
 }
 
 #Totals {
     margin-top: 30px;
     position: absolute;
     right: 0;
+    line-height: 1.5;
     border-style: solid;
     border-width: thin;
-    padding: 10px
+    padding: 10px;
+}
+
+.item-total {
+    font-size: 90%;
+}
+
+.tax-amount {
+    font-size: 90%;
+}
+
+.shipping-cost {
+    font-size: 90%;
+}
+
+.total-amount {
+    font-weight: bold;
 }
 
 .large-input {
@@ -61,45 +154,9 @@ button:not(.delete-button, .return-button, .payment-button) {
     text-align: center;
 }
 
-
-#home-button-img {
-    text-align: left;
-    height: 50px;
-    width: 50px;
-}
-
-#store-logo {
-    height: 100px;
-    width: 100px;
-    margin-right: 10px;
-}
-
-h1 {
-    display: inline block;
-    text-align: center;
-}
-
-#store-title {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-grow: 1;
-    margin: 0;
-}
-
-#store-header {
-    display: inline-block;
-}
-
 #department {
     display: inline-block;
     margin-left: 20px;
-}
-
-header {
-    background-color: pink;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .department-img {
