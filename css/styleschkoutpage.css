@@ -115,7 +115,7 @@ button:not(.delete-button, .return-button, .payment-button) {
     margin-top: 30px;
     position: absolute;
     right: 0;
-    line-height: 1.5;
+    line-height: 1.55;
     border-style: solid;
     border-width: thin;
     padding: 10px;
