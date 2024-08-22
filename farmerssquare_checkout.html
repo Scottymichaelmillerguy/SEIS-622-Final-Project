@@ -8,17 +8,26 @@
 
 <body>
     <header>
-        <button><img id="home-button-img" href="farmerssquare.html" src="images/white-home-icon-transparent-png-6.png"
-                alt="Home Button"></button>
-        <h1 id="store-title"><img id="store-logo"
-                src="images/Gemini_Generated_Image_rob1fsrob1fsrob1.jfif"></img>Farmer's Square</h1>
-        <button id="cart-button-img"><img href="" src="" alt=""></button>
+        <a href="farmerssquare.html" class="home_button">
+            <img style="width: 50px; height: 50px; object-fit: cover;"
+                src="images/white-home-icon-transparent-png-6.png" alt="Home Button">
+        </a>
+
+
+        <h1 id="store-header">Farmer's Square <img style="width: 50px; height: 50px; object-fit: cover;"
+                src="images/Gemini_Generated_Image_rob1fsrob1fsrob1.jfif" alt="Home Button"></h1>
+
+        <a href="farmerssquare_checkout.html" class="chekout_button">
+            <img style="width: 50px; height: 50px; object-fit: cover;"
+                src="images/Shopping-Cart-PNG-Royalty-Free-Photo-3299087989.png" alt="Chekcout Button">
+        </a>
     </header>
+    <section id="ReturnButton">
+        <button class="return-button" type="button">Return to Shop for More Items</button>
+    </section>
     <section id="Cart">
-        <section id="ReturnButton">
-            <button class="return-button" type="button">Return to Shop for More Items</button>
-        </section>
         <h2>Your Items Cart:</h2>
+    </br>
         <div class="select-all">
             <input type="checkbox" id="selectAll" class="checkbox-item">
             <label>Select All Items</label>
@@ -65,24 +74,23 @@
     <br></br>
     <section id="Totals">
         <h2>Order Total</h2>
+        </br>
         <p class="item-total">Item Total: (Add Amount Here)</p>
         <p class="tax-amount">Tax Amount: (Add Amount Here)</p>
         <p class="shipping-cost">Shipping Costs: (Add Amount Here)</p>
         <p class="total-amount">Total Payment Amount: (Add Amount Here)</p>
     </section>
-    <div class="line-break">
-        <hr>
-    </div>
     <form>
         <div class="form-container">
             <fieldset>
-                <h2>Contact Information </h2>
+                <h2 id="contact_information">Contact Information </h2>
                 <p><label> <input type=text class="small-input" placeholder="First Name"></label> <label> <input
                             type=text class="small-input" placeholder="Last Name"></label> </p>
                 <p><label> <input type=text class="large-input" placeholder="Email Address"></label></p>
                 <p><label> <input type=text class="large-input" placeholder="Street Address"></label></p>
                 <p><label> <input type=text class="medium-input" placeholder="Phone Number"></label></p>
-                <h2>Billing Information </h2>
+                </br>
+                <h2 id="billing_information">Billing Information </h2>
                 <p><label> <input type=text class="large-input" placeholder="Credit Card Number"></label></p>
                 <p><label> <input type=text class="small-input" placeholder="Exp. Date"></label><label> <input type=text
                             class="small-input" placeholder="CVV"></label></p>
