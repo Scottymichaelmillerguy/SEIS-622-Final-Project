@@ -17,6 +17,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* This Section is the CSS for the Header */
 header {
     display: flex;
     align-items: center;
@@ -29,8 +30,10 @@ header {
 }
 
 #store-header {
-  display: inline-block;
-  text-align: center;
+  font-size: 1.8rem;
+  color: #384430;
+  display: flex;
+  align-items: center;
 }
 
 #home_button {
@@ -50,8 +53,6 @@ header {
   object-fit: contain;
 }
 
-
-
 #cart-button-img {
     height: 50px;
     width: 50px;
@@ -59,6 +60,7 @@ header {
     top: 10px;
     right: 10px;
 }
+/* This is the end of the header CSS */
 
 #department {
     display: inline-block;
