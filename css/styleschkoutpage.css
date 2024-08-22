@@ -21,10 +21,19 @@ header {
     justify-content: space-between;
     width: 100%;
     padding: 10px 20px;
-    background-color: lightgreen;
+    background-color: #dbccb5;
     position: relative;
     text-align: center;
 }
+
+footer {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #dbccb5;
+  }
+
 
 #store-header {
     display: inline-block;
@@ -36,11 +45,11 @@ header {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: lightgreen;
+    background-color: #dbccb5;
     border: none;
     cursor: pointer;
     text-decoration: none;
-}
+  }
 
 #home_icon {
     width: 50px;
@@ -57,12 +66,6 @@ header {
     right: 10px;
 }
 
-button:not(.delete-button, .return-button, .payment-button) {
-    margin: 20px;
-    background-color: pink;
-    border-style: none;
-}
-
 #Cart {
     padding: 10px;
 }
@@ -76,6 +79,8 @@ button:not(.delete-button, .return-button, .payment-button) {
     text-align: right;
     padding: 10px;
 }
+
+.button { background-color: #eaeaea; border: black; color: rgb(0, 0, 0); padding: 6px 10px; text-align: center; text-decoration: none; display: inline-block; font-size: 14px; margin: 4px 2px; cursor: pointer; }
 
 #PaymentButton {
     text-align: right;
