@@ -13,3 +13,95 @@
 }]
 
 
+[
+    {
+        "image": "products/bakery/sliced-seedy-multigrain-bread.png",
+        "description": "Sliced Seedy Multigrain Bread",
+        "price": 3.49,
+        "quantity": ""
+    },
+    {
+        "image": "products/bakery/brioche-style-liege-waffles.png",
+        "description": "Brioche Style Liege Waffles",
+        "price": 3.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/bakery/gluten-free-blueberry-muffins.png",
+        "description": "Gluten Free Blueberry Muffins",
+        "price": 2.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/bakery/peach-raspberry-crisp.png",
+        "description": "Peach Raspberry Crisp",
+        "price": 5.49,
+        "quantity": ""
+    },
+    {
+        "image": "products/bakery/chocolate-brooklyn-babka.png",
+        "description": "Chocolate Brooklyn Babka",
+        "price": 5.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/bakery/lemon-flower-cookies.png",
+        "description": "Lemon Flower Cookies",
+        "price": 5.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/bakery/ciabatta-baguette.png",
+        "description": "Ciabatta Baguette",
+        "price": 1.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/bakery/ciabatta-demi-baguette.png",
+        "description": "Ciabatta Demi-Baguette",
+        "price": 1.29,
+        "quantity": ""
+    },
+    {
+        "image": "products/bakery/danish-princess-pastry.png",
+        "description": "Danish Princess Pastry",
+        "price": 4.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/bakery/sonora-style-flour-tortillas.png",
+        "description": "Sonora Style Flour Tortillas",
+        "price": 2.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/bakery/glazed-chocolate-donut-holes.png",
+        "description": "Glazed Chocolate Donut Holes",
+        "price": 3.49,
+        "quantity": ""
+    },
+    {
+        "image": "products/bakery/organic-garlic-bread.png",
+        "description": "Organic Garlic Bread",
+        "price": 3.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/bakery/snickerdoodle-cookies.png",
+        "description": "Snickerdoodle Cookies",
+        "price": 4.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/bakery/organic-ancient-grain-and-seed-bread.png",
+        "description": "Organic Ancient Grain & Seed Bread",
+        "price": 3.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/bakery/everything-bagels.png",
+        "description": "Everything Bagels",
+        "price": 2.99,
+        "quantity": ""
+    }
+]
