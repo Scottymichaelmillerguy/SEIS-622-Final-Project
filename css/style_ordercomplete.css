@@ -1,78 +1,67 @@
-/* This section is the css for the Header */
 * {
     margin: 0;
-    margin: 0;
     box-sizing: border-box;
-  }
+}
   
-  html {
+html {
     height: 100%;
     width: 100%;
-  }
-  main { flex: 1; }
+}
   
-  body {
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     height: 100%;
     width: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #fff9f0;
-  }
+}
   
-  /* This Section is the CSS for the Header */
-  header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      padding: 10px 20px;
-      background-color: #dbccb5;
-      position: relative;
-      text-align: center;
-  }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #dbccb5;
+    position: relative;
+    text-align: center;
+}
 
-  #Salutations{
+#Salutations {
     margin-top: 100px;
     margin-left: 10px;
     font-size: larger;
-  }
+}
 
-  #OrderDetails{
+#OrderDetails {
     margin-left: 10px;
+}
 
-  }
+#G1, #G2, #G3, #G4, #G5 {
+    margin-left: 135px;
+}
 
-  #G1{
-    margin-left: 135px;
-  }
-  #G2{
-    margin-left: 135px;
-  }
-  #G3{
-    margin-left: 135px;
-  }
-  #G4{
-    margin-left: 135px;
-  }
-  #G5{
-    margin-left: 135px;
-  }
-
-  #Time{
+#Time {
     margin-left: 10px;
-  }
+}
 
-
-  #Greeting{
+#Greeting {
     margin-top: 150px;
     text-align: center;
     font-size: larger;
-  }
+}
 
-
-  footer {
-    display: block;
+footer {
+    background-color: #dbccb5;
     text-align: center;
     padding: 10px 0;
-    background-color: #dbccb5;
-  }
+    width: 100%;
+    margin-top: auto; 
+}
+
+.footer-year, .creator-names {
+    margin-bottom: 5px;
+}
