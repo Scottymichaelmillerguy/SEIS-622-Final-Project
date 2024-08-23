@@ -1,11 +1,9 @@
 * {
     margin: 0;
-    margin: 0;
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     height: 100%;
     width: 100%;
 }
@@ -13,6 +11,8 @@ body {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    position: relative;
+    min-height: 100vh;
 }
 
 header {
@@ -27,13 +27,14 @@ header {
 }
 
 footer {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px 0;
     background-color: #dbccb5;
-  }
-
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 
 #store-header {
     display: inline-block;
@@ -49,14 +50,13 @@ footer {
     border: none;
     cursor: pointer;
     text-decoration: none;
-  }
+}
 
 #home_icon {
     width: 50px;
     height: 50px;
     object-fit: contain;
 }
-
 
 #cart-button-img {
     height: 50px;
@@ -70,8 +70,8 @@ footer {
     padding: 10px;
 }
 
-.select-all{
-    font-size:90%;
+.select-all {
+    font-size: 90%;
 }
 
 #ReturnButton {
@@ -80,7 +80,18 @@ footer {
     padding: 10px;
 }
 
-.button { background-color: #eaeaea; border: black; color: rgb(0, 0, 0); padding: 6px 10px; text-align: center; text-decoration: none; display: inline-block; font-size: 14px; margin: 4px 2px; cursor: pointer; }
+.button {
+    background-color: #eaeaea;
+    border: black;
+    color: rgb(0, 0, 0);
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
 #PaymentButton {
     text-align: right;
@@ -107,7 +118,6 @@ footer {
 
 #billing_information {
     padding-left: 55px;
-
 }
 
 .form-container {
@@ -126,15 +136,7 @@ footer {
     padding: 10px;
 }
 
-.item-total {
-    font-size: 90%;
-}
-
-.tax-amount {
-    font-size: 90%;
-}
-
-.shipping-cost {
+.item-total, .tax-amount, .shipping-cost {
     font-size: 90%;
 }
 
