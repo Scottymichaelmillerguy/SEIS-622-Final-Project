@@ -1,0 +1,92 @@
+[
+    {
+        "image": "products/frozen/coffee-mochi.png",
+        "description": "Coffee Mochi",
+        "price": "$4.69",
+        "quantity": ""
+    },
+    {
+        "image": "products/frozen/chicken-sausage-bowl.png",
+        "description": "Chicken Sausage Breakfast Bowl",
+        "price": "$4.29",
+        "quantity": ""
+    },
+    {
+        "image": "products/frozen/organic-silver-dollar-pancakes.png",
+        "description": "Organic Silver Dollar Pancakes",
+        "price": "$3.29",
+        "quantity": ""
+    },
+    {
+        "image": "products/frozen/ginger-shrimp-lo-mein.png",
+        "description": "Ginger Shrimp Lo Mein",
+        "price": "$5.99",
+        "quantity": ""
+    },
+    {
+        "image": "products/frozen/roasted-corn.png",
+        "description": "Roasted Corn",
+        "price": "$2.79",
+        "quantity": ""
+    },
+    {
+        "image": "products/frozen/steamed-vegetable-soup-dumplings.png",
+        "description": "Steamed Vegetable Soup Dumplings",
+        "price": "$3.49",
+        "quantity": ""
+    },
+    {
+        "image": "products/frozen/tropical-green-tea-instant-boba-kit.png",
+        "description": "Tropical Green Tea Instant Boba Kit",
+        "price": "$4.99",
+        "quantity": ""
+    },
+    {
+        "image": "products/frozen/panzerotti-pizza-bites.png",
+        "description": "Panzerotti Pizza Bites",
+        "price": "$3.99",
+        "quantity": ""
+    },
+    {
+        "image": "products/frozen/mango-cream-bars.png",
+        "description": "Mango Cream Bars",
+        "price": "$3.49",
+        "quantity": ""
+    },
+    {
+        "image": "products/frozen/organic-freezer-pops.png",
+        "description": "Organic Freezer Pops",
+        "price": "$3.49",
+        "quantity": ""
+    },
+    {
+        "image": "products/frozen/lemon-ginger-cheesecake.png",
+        "description": "Lemon Ginger Cheesecake",
+        "price": "$7.99",
+        "quantity": ""
+    },
+    {
+        "image": "products/frozen/super-strawberry-sorbet.png",
+        "description": "Super Strawberry Sorbet",
+        "price": "$3.99",
+        "quantity": ""
+    },
+    {
+        "image": "products/frozen/salsa-verde-chicken-enchiladas.png",
+        "description": "Salsa Verde Chicken Enchiladas",
+        "price": "$4.99",
+        "quantity": ""
+    },
+    {
+        "image": "products/frozen/meatless-meatballs.png",
+        "description": "Meatless Meatballs",
+        "price": "$4.99",
+        "quantity": ""
+    },
+    {
+        "image": "products/frozen/jumeokbap.png",
+        "description": "Jumeokbap",
+        "price": "$4.99",
+        "quantity": ""
+    }
+]
