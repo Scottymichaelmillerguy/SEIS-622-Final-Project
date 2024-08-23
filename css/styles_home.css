@@ -194,3 +194,51 @@ h2 {
   width: 100%;
   height: auto;
 }
+
+.table-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.department-img {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+table {
+  width: 75%;
+  text-align: center;
+  border-spacing: 30px; 
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 25px;
+  background-color: #dbccb5;
+  align-items: "center";
+  vertical-align: middle;
+  padding: 10px;
+}
+
+a {
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #dbccb5;
+  
+}
+.footer-year, .creator-names {
+  margin-bottom: 5px;
+}
