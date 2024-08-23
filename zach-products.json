@@ -1,0 +1,94 @@
+[
+    {
+        "image": "products/dairy-and-eggs/small-curd-cottage-cheese.png",
+        "description": "Small Curd Cottage Cheese",
+        "price": 3.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/dairy-and-eggs/vanilla-bean-whole-milk-greek-yogurt.png",
+        "description": "Vanilla Bean Whole Milk Greek Yogurt",
+        "price": 5.49,
+        "quantity": ""
+    },
+    {
+        "image": "products/dairy-and-eggs/apricot-mango-greek-whole-milk-yogurt.png",
+        "description": "Apricot Mango Greek Whole Milk Yogurt",
+        "price": 0.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/dairy-and-eggs/pasture-raised-large-brown-eggs.png",
+        "description": "Pasture Raised Large Brown Eggs",
+        "price": 4.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/dairy-and-eggs/plain-whole-milk-greek-yogurt.png",
+        "description": "Plain Whole Milk Greek Yogurt",
+        "price": 0.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/dairy-and-eggs/nonfat-plain-greek-yogurt.png",
+        "description": "Nonfat Plain Greek Yogurt",
+        "price": 0.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/dairy-and-eggs/peaches-and-cream-mango-and-cream-yogurt.png",
+        "description": "Peaches & Cream Mango & Cream Yogurt Cups",
+        "price": 3.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/dairy-and-eggs/greek-yogurt-with-honey.png",
+        "description": "Greek Yogurt with Honey",
+        "price": 5.49,
+        "quantity": ""
+    },
+    {
+        "image": "products/dairy-and-eggs/butter-quarters-unsalted.png",
+        "description": "Butter Quarters Unsalted",
+        "price": 3.99,
+        "quantity": ""
+    },
+    {
+        "image": "products/dairy-and-eggs/raspberries-and-cream-yogurt.png",
+        "description": "Raspberries & Cream Yogurt",
+        "price": 0.69,
+        "quantity": ""
+    },
+    {
+        "image": "products/dairy-and-eggs/vanilla-and-cream-yogurt.png",
+        "description": "Vanilla & Cream Yogurt",
+        "price": 0.69,
+        "quantity": ""
+    },
+    {
+        "image": "products/dairy-and-eggs/organic-heavy-whipping-cream.png",
+        "description": "Organic Heavy Whipping Cream",
+        "price": 4.49,
+        "quantity": ""
+    },
+    {
+        "image": "products/dairy-and-eggs/sour-cream.png",
+        "description": "Sour Cream",
+        "price": 2.79,
+        "quantity": ""
+    },
+    {
+        "image": "products/dairy-and-eggs/organic-whole-milk.png",
+        "description": "Organic Whole Milk",
+        "price": 5.49,
+        "quantity": ""
+    },
+    {
+        "image": "products/dairy-and-eggs/icelandic-style-skyr-lowfat-raspberry.png",
+        "description": "Icelandic Style Skyr Lowfat Raspberry Yogurt",
+        "price": 1.19,
+        "quantity": ""
+    }
+]
+
+
