@@ -432,6 +432,71 @@
             "quantity": ""
           }
         ]
+      },
+      {
+        "name": "Produce",
+        "products": [
+          {
+            "image": "products/produce/organic-apples.png",
+            "description": "Organic Apples",
+            "price": "$3.99",
+            "quantity": ""
+          },
+          {
+            "image": "products/produce/bananas.png",
+            "description": "Bananas",
+            "price": "$1.29",
+            "quantity": ""
+          },
+          {
+            "image": "products/produce/baby-carrots.png",
+            "description": "Baby Carrots",
+            "price": "$1.99",
+            "quantity": ""
+          },
+          {
+            "image": "products/produce/romaine-lettuce.png",
+            "description": "Romaine Lettuce",
+            "price": "$2.49",
+            "quantity": ""
+          },
+          {
+            "image": "products/produce/tomatoes.png",
+            "description": "Tomatoes",
+            "price": "$2.99",
+            "quantity": ""
+          },
+          {
+            "image": "products/produce/cucumbers.png",
+            "description": "Cucumbers",
+            "price": "$1.79",
+            "quantity": ""
+          },
+          {
+            "image": "products/produce/avocados.png",
+            "description": "Avocados",
+            "price": "$1.99",
+            "quantity": ""
+          },
+          {
+            "image": "products/produce/bell-peppers.png",
+            "description": "Bell Peppers",
+            "price": "$3.49",
+            "quantity": ""
+          },
+          {
+            "image": "products/produce/onions.png",
+            "description": "Onions",
+            "price": "$1.29",
+            "quantity": ""
+          },
+          {
+            "image": "products/produce/garlic.png",
+            "description": "Garlic",
+            "price": "$0.99",
+            "quantity": ""
+          }
+        ]
       }
     ]
   }
