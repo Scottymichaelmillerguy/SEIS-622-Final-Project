@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "lib": ["dom", "es6","es2015"],
+        "module": "CommonJS",
+        "outDir": "dist",
+        "sourceMap": true,
+        "strict": true,
+        "target": "ES2015",
+        "strictPropertyInitialization": false,
+        "noImplicitAny": false,
+        "esModuleInterop": true
+
+    },
+    "include": [
+        "src"
+    ]
+}
