@@ -1,503 +1,664 @@
 {
-    "departments": [
-      {
-        "name": "Frozen",
-        "products": [
-          {
-            "image": "products/frozen/coffee-mochi.png",
-            "description": "Coffee Mochi",
-            "price": "$4.69",
-            "quantity": ""
-          },
-          {
-            "image": "products/frozen/chicken-sausage-bowl.png",
-            "description": "Chicken Sausage Breakfast Bowl",
-            "price": "$4.29",
-            "quantity": ""
-          },
-          {
-            "image": "products/frozen/organic-silver-dollar-pancakes.png",
-            "description": "Organic Silver Dollar Pancakes",
-            "price": "$3.29",
-            "quantity": ""
-          },
-          {
-            "image": "products/frozen/ginger-shrimp-lo-mein.png",
-            "description": "Ginger Shrimp Lo Mein",
-            "price": "$5.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/frozen/roasted-corn.png",
-            "description": "Roasted Corn",
-            "price": "$2.79",
-            "quantity": ""
-          },
-          {
-            "image": "products/frozen/steamed-vegetable-soup-dumplings.png",
-            "description": "Steamed Vegetable Soup Dumplings",
-            "price": "$3.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/frozen/tropical-green-tea-instant-boba-kit.png",
-            "description": "Tropical Green Tea Instant Boba Kit",
-            "price": "$4.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/frozen/panzerotti-pizza-bites.png",
-            "description": "Panzerotti Pizza Bites",
-            "price": "$3.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/frozen/mango-cream-bars.png",
-            "description": "Mango Cream Bars",
-            "price": "$3.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/frozen/organic-freezer-pops.png",
-            "description": "Organic Freezer Pops",
-            "price": "$3.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/frozen/lemon-ginger-cheesecake.png",
-            "description": "Lemon Ginger Cheesecake",
-            "price": "$7.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/frozen/super-strawberry-sorbet.png",
-            "description": "Super Strawberry Sorbet",
-            "price": "$3.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/frozen/salsa-verde-chicken-enchiladas.png",
-            "description": "Salsa Verde Chicken Enchiladas",
-            "price": "$4.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/frozen/meatless-meatballs.png",
-            "description": "Meatless Meatballs",
-            "price": "$4.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/frozen/jumeokbap.png",
-            "description": "Jumeokbap",
-            "price": "$4.99",
-            "quantity": ""
-          }
-        ]
-      },
-      {
-        "name": "Meat",
-        "products": [
-          {
-            "image": "products/meats/savory-herved-chicken-thighs.png",
-            "description": "Savory Herbed Chicken Thighs",
-            "price": "$6.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/meats/pesto-chicken-breast.png",
-            "description": "Pesto Chicken Breast",
-            "price": "$8.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/meats/sweet-italian-chicken-sausage.png",
-            "description": "Sweet Italian Chicken Sausage",
-            "price": "$6.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/meats/uncured-beef-hot-dogs.png",
-            "description": "Uncured Beef Hot Dogs",
-            "price": "$3.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/meats/beef-rib-eye-steak.png",
-            "description": "Beef Rib Eye Steak",
-            "price": "$13.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/meats/sliced-prosciutto.png",
-            "description": "Sliced Prosciutto",
-            "price": "$6.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/meats/all-natural-chicken-drumsticks.png",
-            "description": "All Natural Chicken Drumsticks",
-            "price": "$1.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/meats/cheddar-chicken-sausages.png",
-            "description": "Cheddar Chicken Sausage",
-            "price": "$4.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/meats/organic-chicken-nuggets.png",
-            "description": "Organic Chicken Nuggets",
-            "price": "$4.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/meats/carne-asada-autentica.png",
-            "description": "Carne Asada Autentica",
-            "price": "$11.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/meats/uncured-apple-smoked-bacon.png",
-            "description": "Uncured Apple Smoked Bacon",
-            "price": "$6.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/meats/gyro-slices.png",
-            "description": "Gyro Slices",
-            "price": "$4.69",
-            "quantity": ""
-          },
-          {
-            "image": "products/meats/fresh-atlantic-salmon.png",
-            "description": "Fresh Atlantic Salmon",
-            "price": "$9.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/meats/wild-sockeye-smoked-salmon.png",
-            "description": "Wild Sockeye Smoked Salmon",
-            "price": "$7.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/meats/wild-caught-cod-filets.png",
-            "description": "Wild Caught Cod Fillets",
-            "price": "$10.99",
-            "quantity": ""
-          }
-        ]
-      },
-      {
-        "name": "Pantry",
-        "products": [
-          {
-            "image": "products/pantry/black-beans.png",
-            "description": "Black Beans",
-            "price": "$0.89",
-            "quantity": ""
-          },
-          {
-            "image": "products/pantry/spicy-squiggly-.png",
-            "description": "Spicy Squiggly Knife Cut Noodles",
-            "price": "$4.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/pantry/turkey-chili-with-beans.png",
-            "description": "Turkey Chili with Beans",
-            "price": "$2.69",
-            "quantity": ""
-          },
-          {
-            "image": "products/pantry/tikka-masala-curry-sauce.png",
-            "description": "Tikka Masala Curry Sauce",
-            "price": "$2.29",
-            "quantity": ""
-          },
-          {
-            "image": "products/pantry/eliros-extra-virgin-olive-oil.png",
-            "description": "Eliros Extra Virgin Olive Oil",
-            "price": "$14.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/pantry/apricot-cardamom-spread.png",
-            "description": "Apricot Cardamom Spread",
-            "price": "$2.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/pantry/kosher-dill-pickles.png",
-            "description": "Kosher Dill Pickles",
-            "price": "$2.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/pantry/cheddar-macaroni-and-cheese.png",
-            "description": "Cheddar Macaroni & Cheese",
-            "price": "$0.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/pantry/avocado-oil.png",
-            "description": "Avocado Oil",
-            "price": "$6.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/pantry/chickpea-fusilli-pasta.png",
-            "description": "Chickpea Fusilli Pasta",
-            "price": "$2.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/pantry/organic-tricolor-quinoa.png",
-            "description": "Organic Tricolor Quinoa",
-            "price": "$3.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/pantry/crunchy-peanut-butter-unsalted.png",
-            "description": "Crunchy Peanut Butter Unsalted",
-            "price": "$2.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/pantry/chocolate-hazelnut-spread.png",
-            "description": "Chocolate Hazelnut Spread",
-            "price": "$3.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/pantry/creamy-peanut-butter-salted.png",
-            "description": "Creamy Peanut Butter Salted",
-            "price": "$2.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/pantry/organic-coconut-flakes.png",
-            "description": "Organic Coconut Flakes",
-            "price": "$2.99",
-            "quantity": ""
-          }
-        ]
-      },
-      {
-        "name": "Bakery",
-        "products": [
-          {
-            "image": "products/bakery/multigrain-bread.png",
-            "description": "Multigrain Bread",
-            "price": "$3.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/bakery/sourdough-baguette.png",
-            "description": "Sourdough Baguette",
-            "price": "$2.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/bakery/gluten-free-brownie-mix.png",
-            "description": "Gluten-Free Brownie Mix",
-            "price": "$4.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/bakery/chocolate-chip-cookies.png",
-            "description": "Chocolate Chip Cookies",
-            "price": "$3.79",
-            "quantity": ""
-          },
-          {
-            "image": "products/bakery/whole-wheat-flour.png",
-            "description": "Whole Wheat Flour",
-            "price": "$3.29",
-            "quantity": ""
-          },
-          {
-            "image": "products/bakery/cinnamon-raisin-bread.png",
-            "description": "Cinnamon Raisin Bread",
-            "price": "$3.69",
-            "quantity": ""
-          },
-          {
-            "image": "products/bakery/organic-bagels.png",
-            "description": "Organic Bagels",
-            "price": "$2.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/bakery/croissants.png",
-            "description": "Croissants",
-            "price": "$4.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/bakery/pumpkin-muffins.png",
-            "description": "Pumpkin Muffins",
-            "price": "$3.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/bakery/cheddar-jalapeno-bread.png",
-            "description": "Cheddar Jalapeno Bread",
-            "price": "$3.99",
-            "quantity": ""
-          }
-        ]
-      },
-      {
-        "name": "Dairy and Eggs",
-        "products": [
-          {
-            "image": "products/dairy_and_eggs/organic-greek-yogurt.png",
-            "description": "Organic Greek Yogurt",
-            "price": "$5.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/dairy_and_eggs/cheddar-cheese.png",
-            "description": "Cheddar Cheese",
-            "price": "$4.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/dairy_and_eggs/large-brown-eggs.png",
-            "description": "Large Brown Eggs",
-            "price": "$2.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/dairy_and_eggs/whole-milk.png",
-            "description": "Whole Milk",
-            "price": "$3.69",
-            "quantity": ""
-          },
-          {
-            "image": "products/dairy_and_eggs/butter.png",
-            "description": "Butter",
-            "price": "$4.29",
-            "quantity": ""
-          },
-          {
-            "image": "products/dairy_and_eggs/greek-yogurt-with-fruit.png",
-            "description": "Greek Yogurt with Fruit",
-            "price": "$5.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/dairy_and_eggs/cottage-cheese.png",
-            "description": "Cottage Cheese",
-            "price": "$3.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/dairy_and_eggs/sliced-mozzarella.png",
-            "description": "Sliced Mozzarella",
-            "price": "$4.29",
-            "quantity": ""
-          },
-          {
-            "image": "products/dairy_and_eggs/organic-feta-cheese.png",
-            "description": "Organic Feta Cheese",
-            "price": "$5.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/dairy_and_eggs/almond-milk.png",
-            "description": "Almond Milk",
-            "price": "$3.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/dairy_and_eggs/greek-yogurt.png",
-            "description": "Greek Yogurt",
-            "price": "$4.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/dairy_and_eggs/organic-milk.png",
-            "description": "Organic Milk",
-            "price": "$4.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/dairy_and_eggs/organic-sour-cream.png",
-            "description": "Organic Sour Cream",
-            "price": "$2.99",
-            "quantity": ""
-          }
-        ]
-      },
-      {
-        "name": "Produce",
-        "products": [
-          {
-            "image": "products/produce/organic-apples.png",
-            "description": "Organic Apples",
-            "price": "$3.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/produce/bananas.png",
-            "description": "Bananas",
-            "price": "$1.29",
-            "quantity": ""
-          },
-          {
-            "image": "products/produce/baby-carrots.png",
-            "description": "Baby Carrots",
-            "price": "$1.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/produce/romaine-lettuce.png",
-            "description": "Romaine Lettuce",
-            "price": "$2.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/produce/tomatoes.png",
-            "description": "Tomatoes",
-            "price": "$2.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/produce/cucumbers.png",
-            "description": "Cucumbers",
-            "price": "$1.79",
-            "quantity": ""
-          },
-          {
-            "image": "products/produce/avocados.png",
-            "description": "Avocados",
-            "price": "$1.99",
-            "quantity": ""
-          },
-          {
-            "image": "products/produce/bell-peppers.png",
-            "description": "Bell Peppers",
-            "price": "$3.49",
-            "quantity": ""
-          },
-          {
-            "image": "products/produce/onions.png",
-            "description": "Onions",
-            "price": "$1.29",
-            "quantity": ""
-          },
-          {
-            "image": "products/produce/garlic.png",
-            "description": "Garlic",
-            "price": "$0.99",
-            "quantity": ""
-          }
-        ]
-      }
-    ]
-  }
-  
+  "departments": [
+    {
+      "name": "Frozen",
+      "products": [
+        {
+          "itemId": "1",
+          "image": "products/frozen/coffee-mochi.png",
+          "description": "Coffee Mochi",
+          "price": 4.69,
+          "quantity": ""
+        },
+        {
+          "itemId": "2",
+          "image": "products/frozen/chicken-sausage-bowl.png",
+          "description": "Chicken Sausage Breakfast Bowl",
+          "price": 4.29,
+          "quantity": ""
+        },
+        {
+          "itemId": "3",
+          "image": "products/frozen/organic-silver-dollar-pancakes.png",
+          "description": "Organic Silver Dollar Pancakes",
+          "price": 3.29,
+          "quantity": ""
+        },
+        {
+          "itemId": "4",
+          "image": "products/frozen/ginger-shrimp-lo-mein.png",
+          "description": "Ginger Shrimp Lo Mein",
+          "price": 5.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "5",
+          "image": "products/frozen/roasted-corn.png",
+          "description": "Roasted Corn",
+          "price": 2.79,
+          "quantity": ""
+        },
+        {
+          "itemId": "6",
+          "image": "products/frozen/steamed-vegetable-soup-dumplings.png",
+          "description": "Steamed Vegetable Soup Dumplings",
+          "price": 3.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "7",
+          "image": "products/frozen/tropical-green-tea-instant-boba-kit.png",
+          "description": "Tropical Green Tea Instant Boba Kit",
+          "price": 4.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "8",
+          "image": "products/frozen/panzerotti-pizza-bites.png",
+          "description": "Panzerotti Pizza Bites",
+          "price": 3.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "9",
+          "image": "products/frozen/mango-cream-bars.png",
+          "description": "Mango Cream Bars",
+          "price": 3.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "10",
+          "image": "products/frozen/organic-freezer-pops.png",
+          "description": "Organic Freezer Pops",
+          "price": 3.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "11",
+          "image": "products/frozen/lemon-ginger-cheesecake.png",
+          "description": "Lemon Ginger Cheesecake",
+          "price": 7.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "12",
+          "image": "products/frozen/super-strawberry-sorbet.png",
+          "description": "Super Strawberry Sorbet",
+          "price": 3.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "13",
+          "image": "products/frozen/salsa-verde-chicken-enchiladas.png",
+          "description": "Salsa Verde Chicken Enchiladas",
+          "price": 4.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "14",
+          "image": "products/frozen/meatless-meatballs.png",
+          "description": "Meatless Meatballs",
+          "price": 4.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "15",
+          "image": "products/frozen/jumeokbap.png",
+          "description": "Jumeokbap",
+          "price": 4.99,
+          "quantity": ""
+        }
+      ]
+    },
+    {
+      "name": "Meat",
+      "products": [
+        {
+          "itemId": "16",
+          "image": "products/meats/savory-herved-chicken-thighs.png",
+          "description": "Savory Herbed Chicken Thighs",
+          "price": 6.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "17",
+          "image": "products/meats/pesto-chicken-breast.png",
+          "description": "Pesto Chicken Breast",
+          "price": 8.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "18",
+          "image": "products/meats/sweet-italian-chicken-sausage.png",
+          "description": "Sweet Italian Chicken Sausage",
+          "price": 6.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "19",
+          "image": "products/meats/uncured-beef-hot-dogs.png",
+          "description": "Uncured Beef Hot Dogs",
+          "price": 3.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "20",
+          "image": "products/meats/beef-rib-eye-steak.png",
+          "description": "Beef Rib Eye Steak",
+          "price": 13.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "21",
+          "image": "products/meats/sliced-prosciutto.png",
+          "description": "Sliced Prosciutto",
+          "price": 6.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "22",
+          "image": "products/meats/all-natural-chicken-drumsticks.png",
+          "description": "All Natural Chicken Drumsticks",
+          "price": 1.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "23",
+          "image": "products/meats/cheddar-chicken-sausages.png",
+          "description": "Cheddar Chicken Sausage",
+          "price": 4.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "24",
+          "image": "products/meats/organic-chicken-nuggets.png",
+          "description": "Organic Chicken Nuggets",
+          "price": 4.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "25",
+          "image": "products/meats/carne-asada-autentica.png",
+          "description": "Carne Asada Autentica",
+          "price": 11.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "26",
+          "image": "products/meats/uncured-apple-smoked-bacon.png",
+          "description": "Uncured Apple Smoked Bacon",
+          "price": 6.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "27",
+          "image": "products/meats/gyro-slices.png",
+          "description": "Gyro Slices",
+          "price": 4.69,
+          "quantity": ""
+        },
+        {
+          "itemId": "28",
+          "image": "products/meats/fresh-atlantic-salmon.png",
+          "description": "Fresh Atlantic Salmon",
+          "price": 9.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "29",
+          "image": "products/meats/wild-sockeye-smoked-salmon.png",
+          "description": "Wild Sockeye Smoked Salmon",
+          "price": 7.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "30",
+          "image": "products/meats/wild-caught-cod-filets.png",
+          "description": "Wild Caught Cod Fillets",
+          "price": 10.99,
+          "quantity": ""
+        }
+      ]
+    },
+    {
+      "name": "Pantry",
+      "products": [
+        {
+          "itemId": "31",
+          "image": "products/pantry/black-beans.png",
+          "description": "Black Beans",
+          "price": 0.89,
+          "quantity": ""
+        },
+        {
+          "itemId": "32",
+          "image": "products/pantry/spicy-squiggly-.png",
+          "description": "Spicy Squiggly Knife Cut Noodles",
+          "price": 4.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "33",
+          "image": "products/pantry/turkey-chili-with-beans.png",
+          "description": "Turkey Chili with Beans",
+          "price": 2.69,
+          "quantity": ""
+        },
+        {
+          "itemId": "34",
+          "image": "products/pantry/tikka-masala-curry-sauce.png",
+          "description": "Tikka Masala Curry Sauce",
+          "price": 2.29,
+          "quantity": ""
+        },
+        {
+          "itemId": "35",
+          "image": "products/pantry/eliros-extra-virgin-olive-oil.png",
+          "description": "Eliros Extra Virgin Olive Oil",
+          "price": 14.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "36",
+          "image": "products/pantry/apricot-cardamom-spread.png",
+          "description": "Apricot Cardamom Spread",
+          "price": 2.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "37",
+          "image": "products/pantry/kosher-dill-pickles.png",
+          "description": "Kosher Dill Pickles",
+          "price": 2.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "38",
+          "image": "products/pantry/cheddar-macaroni-and-cheese.png",
+          "description": "Cheddar Macaroni & Cheese",
+          "price": 0.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "39",
+          "image": "products/pantry/avocado-oil.png",
+          "description": "Avocado Oil",
+          "price": 6.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "40",
+          "image": "products/pantry/chickpea-fusilli-pasta.png",
+          "description": "Chickpea Fusilli Pasta",
+          "price": 2.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "41",
+          "image": "products/pantry/organic-tricolor-quinoa.png",
+          "description": "Organic Tricolor Quinoa",
+          "price": 3.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "42",
+          "image": "products/pantry/crunchy-peanut-butter-unsalted.png",
+          "description": "Crunchy Peanut Butter Unsalted",
+          "price": 2.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "43",
+          "image": "products/pantry/chocolate-hazelnut-spread.png",
+          "description": "Chocolate Hazelnut Spread",
+          "price": 3.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "44",
+          "image": "products/pantry/creamy-peanut-butter-salted.png",
+          "description": "Creamy Peanut Butter Salted",
+          "price": 2.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "45",
+          "image": "products/pantry/organic-coconut-flakes.png",
+          "description": "Organic Coconut Flakes",
+          "price": 2.99,
+          "quantity": ""
+        }
+      ]
+    },
+    {
+      "name": "Bakery",
+      "products": [
+        {
+          "itemId": "46",
+          "image": "products/bakery/sliced-seedy-multigrain-bread.png",
+          "description": "Sliced Seedy Multigrain Bread",
+          "price": 3.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "47",
+          "image": "products/bakery/brioche-style-liege-waffles.png",
+          "description": "Brioche Style Liege Waffles",
+          "price": 3.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "48",
+          "image": "products/bakery/gluten-free-blueberry-muffins.png",
+          "description": "Gluten Free Blueberry Muffins",
+          "price": 2.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "49",
+          "image": "products/bakery/peach-raspberry-crisp.png",
+          "description": "Peach Raspberry Crisp",
+          "price": 5.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "50",
+          "image": "products/bakery/chocolate-brooklyn-babka.png",
+          "description": "Chocolate Brooklyn Babka",
+          "price": 5.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "51",
+          "image": "products/bakery/lemon-flower-cookies.png",
+          "description": "Lemon Flower Cookies",
+          "price": 5.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "52",
+          "image": "products/bakery/ciabatta-baguette.png",
+          "description": "Ciabatta Baguette",
+          "price": 1.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "53",
+          "image": "products/bakery/ciabatta-demi-baguette.png",
+          "description": "Ciabatta Demi-Baguette",
+          "price": 1.29,
+          "quantity": ""
+        },
+        {
+          "itemId": "54",
+          "image": "products/bakery/danish-princess-pastry.png",
+          "description": "Danish Princess Pastry",
+          "price": 4.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "55",
+          "image": "products/bakery/sonora-style-flour-tortillas.png",
+          "description": "Sonora Style Flour Tortillas",
+          "price": 2.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "56",
+          "image": "products/bakery/glazed-chocolate-donut-holes.png",
+          "description": "Glazed Chocolate Donut Holes",
+          "price": 3.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "57",
+          "image": "products/bakery/organic-garlic-bread.png",
+          "description": "Organic Garlic Bread",
+          "price": 3.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "58",
+          "image": "products/bakery/snickerdoodle-cookies.png",
+          "description": "Snickerdoodle Cookies",
+          "price": 4.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "59",
+          "image": "products/bakery/organic-ancient-grain-and-seed-bread.png",
+          "description": "Organic Ancient Grain & Seed Bread",
+          "price": 3.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "60",
+          "image": "products/bakery/everything-bagels.png",
+          "description": "Everything Bagels",
+          "price": 2.99,
+          "quantity": ""
+        }
+      ]
+    },
+    {
+      "name": "Dairy and Eggs",
+      "products": [
+        {
+          "itemId": "61",
+          "image": "products/dairy-and-eggs/small-curd-cottage-cheese.png",
+          "description": "Small Curd Cottage Cheese",
+          "price": 3.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "62",
+          "image": "products/dairy-and-eggs/vanilla-bean-whole-milk-greek-yogurt.png",
+          "description": "Vanilla Bean Whole Milk Greek Yogurt",
+          "price": 5.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "63",
+          "image": "products/dairy-and-eggs/apricot-mango-greek-whole-milk-yogurt.png",
+          "description": "Apricot Mango Greek Whole Milk Yogurt",
+          "price": 0.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "64",
+          "image": "products/dairy-and-eggs/pasture-raised-large-brown-eggs.png",
+          "description": "Pasture Raised Large Brown Eggs",
+          "price": 4.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "65",
+          "image": "products/dairy-and-eggs/plain-whole-milk-greek-yogurt.png",
+          "description": "Plain Whole Milk Greek Yogurt",
+          "price": 0.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "66",
+          "image": "products/dairy-and-eggs/nonfat-plain-greek-yogurt.png",
+          "description": "Nonfat Plain Greek Yogurt",
+          "price": 0.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "67",
+          "image": "products/dairy-and-eggs/peaches-and-cream-mango-and-cream-yogurt.png",
+          "description": "Peaches & Cream Mango & Cream Yogurt Cups",
+          "price": 3.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "68",
+          "image": "products/dairy-and-eggs/greek-yogurt-with-honey.png",
+          "description": "Greek Yogurt with Honey",
+          "price": 5.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "69",
+          "image": "products/dairy-and-eggs/butter-quarters-unsalted.png",
+          "description": "Butter Quarters Unsalted",
+          "price": 3.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "70",
+          "image": "products/dairy-and-eggs/raspberries-and-cream-yogurt.png",
+          "description": "Raspberries & Cream Yogurt",
+          "price": 0.69,
+          "quantity": ""
+        },
+        {
+          "itemId": "71",
+          "image": "products/dairy-and-eggs/vanilla-and-cream-yogurt.png",
+          "description": "Vanilla & Cream Yogurt",
+          "price": 0.69,
+          "quantity": ""
+        },
+        {
+          "itemId": "72",
+          "image": "products/dairy-and-eggs/organic-heavy-whipping-cream.png",
+          "description": "Organic Heavy Whipping Cream",
+          "price": 4.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "73",
+          "image": "products/dairy-and-eggs/sour-cream.png",
+          "description": "Sour Cream",
+          "price": 2.79,
+          "quantity": ""
+        },
+        {
+          "itemId": "74",
+          "image": "products/dairy-and-eggs/organic-whole-milk.png",
+          "description": "Organic Whole Milk",
+          "price": 5.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "75",
+          "image": "products/dairy-and-eggs/icelandic-style-skyr-lowfat-raspberry.png",
+          "description": "Icelandic Style Skyr Lowfat Raspberry Yogurt",
+          "price": 1.19,
+          "quantity": ""
+        }
+      ]
+    },
+    {
+      "name": "Produce",
+      "products": [
+        {
+          "itemId": "76",
+          "image": "products/produce/kumato-brown-tomatoes.png",
+          "description": "Kumato Brown Tomatoes",
+          "price": 3.69,
+          "quantity": ""
+        },
+        {
+          "itemId": "77",
+          "image": "products/produce/yellow-squash.png",
+          "description": "Yellow Squash",
+          "price": 1.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "78",
+          "image": "products/produce/vidalia-onions.png",
+          "description": "Vidalia Onions",
+          "price": 2.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "79",
+          "image": "products/produce/organic-english-cucumber.png",
+          "description": "Organic English Cucumber",
+          "price": 2.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "80",
+          "image": "products/produce/josies-mandarins.png",
+          "description": "Josies Mandarins",
+          "price": 3.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "81",
+          "image": "products/produce/cut-butternut-squash.png",
+          "description": "Cut Butternut Squash",
+          "price": 3.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "82",
+          "image": "products/produce/romaine-hearts.png",
+          "description": "Romaine Hearts",
+          "price": 2.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "83",
+          "image": "products/produce/yellow-peaches.png",
+          "description": "Yellow Peaches",
+          "price": 3.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "84",
+          "image": "products/produce/red-and-green-grapes-duo.png",
+          "description": "Red and Green Grapes Duo",
+          "price": 6.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "85",
+          "image": "products/produce/organic-brussels-sprouts.png",
+          "description": "Organic Brussels Sprouts",
+          "price": 3.69,
+          "quantity": ""
+        },
+        {
+          "itemId": "86",
+          "image": "products/produce/shishito-peppers.png",
+          "description": "Shishito Peppers",
+          "price": 3.69,
+          "quantity": ""
+        },
+        {
+          "itemId": "87",
+          "image": "products/produce/shiitake-mushrooms.png",
+          "description": "Shiitake Mushrooms",
+          "price": 3.69,
+          "quantity": ""
+        },
+        {
+          "itemId": "88",
+          "image": "products/produce/green-onions.png",
+          "description": "Green Onions",
+          "price": 0.99,
+          "quantity": ""
+        },
+        {
+          "itemId": "89",
+          "image": "products/produce/strawberries.png",
+          "description": "Strawberries",
+          "price": 5.49,
+          "quantity": ""
+        },
+        {
+          "itemId": "90",
+          "image": "products/produce/organic-gold-potatoes.png",
+          "description": "Organic Gold Potatoes",
+          "price": 10.99,
+          "quantity": ""
+        }
+      ]
+    }
+  ]
+}
