@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 var cors = require("cors");
-app.use(cors({ origin: ['http://localhost:5500'] }));
+app.use(cors({ origin: ['http://127.0.0.1:5500'] }));
 // Initialize itemList
 var itemList = [];
 // Read items from JSON file
