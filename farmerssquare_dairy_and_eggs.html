@@ -1,148 +1,45 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Farmers Square Dairy & Eggs Department</title>
-    <link rel="stylesheet" href="css/scott-styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers Square: Dairy & Eggs</title>
+    <link rel="stylesheet" href="css/scott-styles.css">
+    <script src="js/dairyandeggs.js" defer></script> <!-- Link to the JavaScript file -->
 </head>
-
 <body>
     <header>
         <a href="farmerssquare.html" class="home_button">
             <img style="width: 50px; height: 50px; object-fit: cover;"
                 src="images/white-home-icon-transparent-png-6.png" alt="Home Button">
         </a>
-
-
         <h1 id="store-header">Farmer's Square: Dairy & Eggs <img style="width: 50px; height: 50px; object-fit: cover;"
                 src="images/Gemini_Generated_Image_rob1fsrob1fsrob1.jfif" alt="Home Button"></h1>
-
         <a href="farmerssquare_checkout.html" class="chekout_button">
             <img style="width: 50px; height: 50px; object-fit: cover;"
-                src="images/Shopping-Cart-PNG-Royalty-Free-Photo-3299087989.png" alt="Chekcout Button">
+                src="images/Shopping-Cart-PNG-Royalty-Free-Photo-3299087989.png" alt="Checkout Button">
         </a>
     </header>
     <div class="container">
         <div class="department-list">
-            <center>
-                <h2>Department</h2>
-            </center>
+            <center><h2>Department</h2></center>
             <ul>
-                <center>
-                    <li><a href="farmerssquare_produce.html">
-                            <h3>Produce</h3>
-                        </a></li>
-                </center>
-                <center>
-                    <li><a href="farmerssquare_bakery.html">
-                            <h3>Bakery</h3>
-                        </a></li>
-                </center>
-                <center>
-                    <li><a href="farmerssquare_meat.html">
-                            <h3>Meat</h3>
-                        </a></li>
-                </center>
-                <center>
-                    <li><a href="farmerssquare_dairy_and_eggs.html">
-                            <h3>Dairy & Eggs</h3>
-                        </a></li>
-                </center>
-                <center>
-                    <li><a href="farmerssquare_pantry.html">
-                            <h3>Pantry</h3>
-                        </a></li>
-                </center>
-                <center>
-                    <li><a href="farmerssquare_frozen.html">
-                            <h3>Frozen</h3>
-                        </a></li>
-                </center>
+                <center><li><a href="farmerssquare_allitems.html"><h3>All Products</h3></a></li></center>
+                <center><li><a href="farmerssquare_produce.html"><h3>Produce</h3></a></li></center>
+                <center><li><a href="farmerssquare_bakery.html"><h3>Bakery</h3></a></li></center>
+                <center><li><a href="farmerssquare_meat.html"><h3>Meat</h3></a></li></center>
+                <center><li><a href="farmerssquare_dairy_and_eggs.html"><h3>Dairy & Eggs</h3></a></li></center>
+                <center><li><a href="farmerssquare_pantry.html"><h3>Pantry</h3></a></li></center>
+                <center><li><a href="farmerssquare_frozen.html"><h3>Frozen</h3></a></li></center>
             </ul>
         </div>
-
         <div class="table-container">
-            <table>
-                <tr>
-                    <td><img class="department-img" src="products/dairy-and-eggs/small-curd-cottage-cheese.png" alt="">
-                        <p class="description">Small Curd Cottage Cheese</p>
-                        <p class="price">$3.99</p><input class="item-quantity" type="number">
-                    </td>
-                    <td><img class="department-img" src="products/dairy-and-eggs/vanilla-bean-whole-milk-greek-yogurt.png" alt="">
-                        <p class="description">Vanilla Bean Whole Milk Greek Yogurt</p>
-                        <p class="price">5.49</p><input class="item-quantity" type="number">
-                    </td>
-                    <td><img class="department-img" src="products/dairy-and-eggs/apricot-mango-greek-whole-milk-yogurt.png" alt="">
-                        <p class="description">Apricot Mango Greek Whole Milk Yogurt</p>
-                        <p class="price">$0.99</p><input class="item-quantity" type="number">
-                    </td>
-                </tr>
-                <tr>
-                    <td><img class="department-img" src="products/dairy-and-eggs/pasture-raised-large-brown-eggs.png" alt="">
-                        <p class="description">Pasture Raised Large Brown Eggs</p>
-                        <p class="price">$4.99</p><input class="item-quantity" type="number">
-                    </td>
-                    <td><img class="department-img" src="products/dairy-and-eggs/plain-whole-milk-greek-yogurt.png" alt="">
-                        <p class="description"></p>Plain Whole Milk Greek Yogurt<p class="price">$0.99</p><input
-                            class="item-quantity" type="number">
-                    </td>
-                    <td><img class="department-img" src="products/dairy-and-eggs/nonfat-plain-greek-yogurt.png" alt="">
-                        <p class="description">Nonfat Plain Greek Yogurt</p>
-                        <p class="price">$0.99</p><input class="item-quantity" type="number">
-                    </td>
-                </tr>
-                <tr>
-                    <td><img class="department-img" src="products/dairy-and-eggs/peaches-and-cream-mango-and-cream-yogurt.png" alt="">
-                        <p class="description">Peaches & Cream Mango & Cream Yogurt Cups</p>
-                        <p class="price">$3.99</p><input class="item-quantity" type="number">
-                    </td>
-                    <td><img class="department-img" src="products/dairy-and-eggs/greek-yogurt-with-honey.png" alt="">
-                        <p class="description">Greek Yogurt with Honey</p>
-                        <p class="price">$5.49</p><input class="item-quantity" type="number">
-                    </td>
-                    <td><img class="department-img" src="products/dairy-and-eggs/butter-quarters-unsalted.png" alt="">
-                        <p class="description">Butter Quarters Unsalted</p>
-                        <p class="price">$3.99</p><input class="item-quantity" type="number">
-                    </td>
-                </tr>
-                <tr>
-                    <td><img class="department-img" src="products/dairy-and-eggs/raspberries-and-cream-yogurt.png" alt="">
-                        <p class="description">Respberries & Cream Yogurt</p>
-                        <p class="price">$0.69</p><input class="item-quantity" type="number">
-                    </td>
-                    <td><img class="department-img" src="products/dairy-and-eggs/vanilla-and-cream-yogurt.png" alt="">
-                        <p class="description">Vanilla & Cream Yogurt</p>
-                        <p class="price">$0.69</p><input class="item-quantity" type="number">
-                    </td>
-                    <td><img class="department-img" src="products/dairy-and-eggs/organic-heavy-whipping-cream.png" alt="">
-                        <p class="description">Organic Heavy Whipping Cream</p>
-                        <p class="price">$4.49</p><input class="item-quantity" type="number">
-                    </td>
-                </tr>
-                <tr>
-                    <td><img class="department-img" src="products/dairy-and-eggs/sour-cream.png" alt="">
-                        <p class="description">Sour Cream</p>
-                        <p class="price">$2.79</p><input class="item-quantity" type="number">
-                    </td>
-                    <td><img class="department-img" src="products/dairy-and-eggs/organic-whole-milk.png" alt="">
-                        <p class="description">Organic Whole Milk</p>
-                        <p class="price">$5.49</p><input class="item-quantity" type="number">
-                    </td>
-                    <td><img class="department-img" src="products/dairy-and-eggs/icelandic-style-skyr-lowfat-raspberry.png" alt="">
-                        <p class="description">Icelandic Style Skyr Lowfat Raspberry Yogurt</p>
-                        <p class="price">$1.19</p><input class="item-quantity" type="number">
-                    </td>
-                </tr>
-
-            </table>
+            <table></table> <!-- Table to be populated by JavaScript -->
         </div>
     </div>
     <footer>
         <p class="footer-year">2024</p>
         <p class="creator-names">Developed by Zachary Ragone, Abdirahman & Scott Miller</p>
     </footer>
-
 </body>
-
 </html>
