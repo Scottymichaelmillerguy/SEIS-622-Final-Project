@@ -1,27 +1,4 @@
-async function getallProducts() {
-    try {
-        const response = await fetch('http://localhost:3000/');
-        if (!response.ok) {
-            throw new Error('Failed to fetch products');
-        }
-        const data = await response.json();
-        console.log('Fetched data:', data); // Log the fetched data to see its structure
-
-        // Extract and combine products from each department
-        if (data && Array.isArray(data.departments)) {
-            const allProducts = data.departments.flatMap(department => department.products);
-            console.log(`${JSON.stringify({allProducts})}`)
-            return allProducts;
-        } else {
-            throw new Error('Unexpected data format');
-        }
-    } catch (error) {
-        console.error(error);
-        return [];
-    }
-}
-
-async function getDepartmentProducts(n) {
+async function getDepartmentProducts() {
     try {
         const response = await fetch('http://localhost:3000/');
         if (!response.ok) {
@@ -35,7 +12,8 @@ async function getDepartmentProducts(n) {
         console.log(`${data.departments}`);
         // Extract and combine products from each department
         if (data && Array.isArray(data.departments)) {
-            const Products = data.departments[n].products;
+            const Products = data.departments[1].products;
+            console.log(`${Products}`)
             return Products;
         } else {
             throw new Error('Unexpected data format');
@@ -50,7 +28,7 @@ getDepartmentProducts();
 
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const products = await getallProducts();
+    const products = await getDepartmentProducts();
     console.log('Products:', products); // Log the products before rendering
 
     if (!Array.isArray(products)) {

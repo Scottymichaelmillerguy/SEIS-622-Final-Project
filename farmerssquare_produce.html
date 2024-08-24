@@ -1,102 +1,45 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Farmers Square Produce</title>
-    <link rel="stylesheet" href="css/scott-styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers Square: Produce</title>
+    <link rel="stylesheet" href="css/scott-styles.css">
+    <script src="js/produce.js" defer></script> <!-- Link to the JavaScript file -->
 </head>
-
 <body>
     <header>
         <a href="farmerssquare.html" class="home_button">
             <img style="width: 50px; height: 50px; object-fit: cover;"
                 src="images/white-home-icon-transparent-png-6.png" alt="Home Button">
         </a>
-
-
         <h1 id="store-header">Farmer's Square: Produce <img style="width: 50px; height: 50px; object-fit: cover;"
                 src="images/Gemini_Generated_Image_rob1fsrob1fsrob1.jfif" alt="Home Button"></h1>
-
         <a href="farmerssquare_checkout.html" class="chekout_button">
             <img style="width: 50px; height: 50px; object-fit: cover;"
-                src="images/Shopping-Cart-PNG-Royalty-Free-Photo-3299087989.png" alt="Chekcout Button">
+                src="images/Shopping-Cart-PNG-Royalty-Free-Photo-3299087989.png" alt="Checkout Button">
         </a>
     </header>
     <div class="container">
         <div class="department-list">
-            <center>
-                <h2>Department</h2>
-            </center>
+            <center><h2>Department</h2></center>
             <ul>
-                <center>
-                    <li><a href="farmerssquare_produce.html">
-                            <h3>Produce</h3>
-                        </a></li>
-                </center>
-                <center>
-                    <li><a href="farmerssquare_bakery.html">
-                            <h3>Bakery</h3>
-                        </a></li>
-                </center>
-                <center>
-                    <li><a href="farmerssquare_meat.html">
-                            <h3>Meat</h3>
-                        </a></li>
-                </center>
-                <center>
-                    <li><a href="farmerssquare_dairy_and_eggs.html">
-                            <h3>Dairy & Eggs</h3>
-                        </a></li>
-                </center>
-                <center>
-                    <li><a href="farmerssquare_pantry.html">
-                            <h3>Pantry</h3>
-                        </a></li>
-                </center>
-                <center>
-                    <li><a href="farmerssquare_frozen.html">
-                            <h3>Frozen</h3>
-                        </a></li>
-                </center>
+                <center><li><a href="farmerssquare_allitems.html"><h3>All Products</h3></a></li></center>
+                <center><li><a href="farmerssquare_produce.html"><h3>Produce</h3></a></li></center>
+                <center><li><a href="farmerssquare_bakery.html"><h3>Bakery</h3></a></li></center>
+                <center><li><a href="farmerssquare_meat.html"><h3>Meat</h3></a></li></center>
+                <center><li><a href="farmerssquare_dairy_and_eggs.html"><h3>Dairy & Eggs</h3></a></li></center>
+                <center><li><a href="farmerssquare_pantry.html"><h3>Pantry</h3></a></li></center>
+                <center><li><a href="farmerssquare_frozen.html"><h3>Frozen</h3></a></li></center>
             </ul>
         </div>
-
         <div class="table-container">
-        <table>
-            <tr>
-                <td><img class="department-img" src="products/produce/kumato-brown-tomatoes.png" alt=""><p class="description">Kumato Brown Tomatoes</p><p class="price">$3.69</p><input class="item-quantity" type="number"></td>
-                <td><img class="department-img" src="products/produce/yellow-squash.png" alt=""><p class="description">Yellow Squash</p><p class="price">$1.99</p><input class="item-quantity" type="number"></td>
-                <td><img class="department-img" src="products/produce/vidalia-onions.png" alt=""><p class="description">Vidalia Onions</p><p class="price">$2.99</p><input class="item-quantity" type="number"></td>
-            </tr>
-            <tr>
-                <td><img class="department-img" src="products/produce/organic-english-cucumber.png" alt=""><p class="description">Organic English Cucumber</p><p class="price">$2.49</p><input class="item-quantity" type="number"></td>
-                <td><img class="department-img" src="products/produce/josies-mandarins.png" alt=""><p class="description">Josies Mandarins</p><p class="price">$3.49</p><input class="item-quantity" type="number"></td>
-                <td><img class="department-img" src="products/produce/cut-butternut-squash.png" alt=""><p class="description">Cut Butternut Squash</p><p class="price">$3.99</p><input class="item-quantity" type="number"></td>
-            </tr>
-            <tr>
-                <td><img class="department-img" src="products/produce/romaine-hearts.png" alt=""><p class="description">Romaine Hearts</p><p class="price">$2.99</p><input class="item-quantity" type="number"></td>
-                <td><img class="department-img" src="products/produce/yellow-peaches.png" alt=""><p class="description">Yellow Peaches</p><p class="price">$3.49</p><input class="item-quantity" type="number"></td>
-                <td><img class="department-img" src="products/produce/red-and-green-grapes-duo.png" alt=""><p class="description">Red and Green Grapes Duo</p><p class="price">$6.49</p><input class="item-quantity" type="number"></td>
-            </tr>
-            <tr>
-                <td><img class="department-img" src="products/produce/organic-brussels-sprouts.png" alt=""><p class="description">Organic Brussels Sprouts</p><p class="price">$3.69</p><input class="item-quantity" type="number"></td>
-                <td><img class="department-img" src="products/produce/shishito-peppers.png" alt=""><p class="description">Shishito Peppers</p><p class="price">$3.69</p><input class="item-quantity" type="number"></td>
-                <td><img class="department-img" src="products/produce/shiitake-mushrooms.png" alt=""><p class="description">Shiitake Mushrooms</p><p class="price">$3.69</p><input class="item-quantity" type="number"></td>
-            </tr>
-            <tr>
-                <td><img class="department-img" src="products/produce/green-onions.png" alt=""><p class="description">Green Onions</p><p class="price">$0.99</p><input class="item-quantity" type="number"></td>
-                <td><img class="department-img" src="products/produce/strawberries.png" alt=""><p class="description">Strawberries</p><p class="price">$5.49</p><input class="item-quantity" type="number"></td>
-                <td><img class="department-img" src="products/produce/organic-gold-potatoes.png" alt=""><p class="description">Organic Gold Potatoes</p><p class="price">$10.99</p><input class="item-quantity" type="number"></td>
-            </tr>
-        
-        </table>
+            <table></table> <!-- Table to be populated by JavaScript -->
         </div>
     </div>
-        <footer>
-            <p class="footer-year">2024</p>
-            <p class = "creator-names">Developed by Zachary Ragone, Abdirahman & Scott Miller</p>
-        </footer>
-        
-    </body>
+    <footer>
+        <p class="footer-year">2024</p>
+        <p class="creator-names">Developed by Zachary Ragone, Abdirahman & Scott Miller</p>
+    </footer>
+</body>
 </html>

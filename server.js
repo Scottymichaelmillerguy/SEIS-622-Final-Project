@@ -23,6 +23,8 @@ fs.readFile(filePath, function (err, data) {
         itemList = JSON.parse(data);
     }
 });
+
+
 // Serve itemList at root endpoint
 app.get("/", function (req, res) {
     res.status(200).json(itemList);

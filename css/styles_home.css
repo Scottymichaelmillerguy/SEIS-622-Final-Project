@@ -215,7 +215,7 @@ table {
   border-spacing: 30px; 
 }
 
-td {
+td:not(.blank) {
   border: 1px solid black;
   text-align: center;
   border-radius: 25px;
