@@ -11,8 +11,10 @@ html, body {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    position: relative;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
+    position: relative;
 }
 
 header {
@@ -26,14 +28,16 @@ header {
     text-align: center;
 }
 
+.content {
+    flex: 1;
+}
+
 footer {
     background-color: #dbccb5;
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin-top: auto;
 }
 
 #store-header {
@@ -104,36 +108,40 @@ footer {
 }
 
 .delivery-type {
-    position: absolute;
+    position: relative;
     right: 0;
+    margin-top: 20px; /* Adjust the margin as needed */
     display: flex;
     align-items: center;
     margin-right: 5px;
     gap: 10px;
 }
 
-#contact_information {
-    padding-left: 55px;
-}
-
-#billing_information {
-    padding-left: 55px;
-}
-
-.form-container {
-    margin-top: 225px;
-    margin-bottom: 25px;
-    line-height: 2;
-}
-
 #Totals {
-    margin-top: 30px;
-    position: absolute;
+    position: relative;
     right: 0;
+    margin-top: 20px; /* Adjust to ensure spacing below delivery type */
     line-height: 1.55;
     border-style: solid;
     border-width: thin;
     padding: 10px;
+    width: 200px; /* Adjust the width as needed */
+}
+
+.form-container {
+    margin-top: 20px; /* Ensures space between #Totals and form-container */
+    margin-bottom: 25px;
+    line-height: 2;
+}
+
+#contact_information {
+    padding-left: 55px;
+    margin-top: 30px;
+}
+
+#billing_information {
+    padding-left: 55px;
+    margin-top: 20px;
 }
 
 .item-total, .tax-amount, .shipping-cost {

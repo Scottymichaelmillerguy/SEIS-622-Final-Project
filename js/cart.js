@@ -21,10 +21,8 @@ function updateCartCount() {
         }
     });
 
-    // Update item count
     itemCount = count;
 
-    // Display the count on the cart icon
     let countElement = document.querySelector('.cart-count');
     if (!countElement) {
         countElement = document.createElement('div');
@@ -41,11 +39,9 @@ function updateCartCount() {
     }
     countElement.textContent = itemCount;
 
-    // Store cart items in localStorage for the checkout page
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
 }
 
-// Attach event listeners after rendering the products
 function attachQuantityChangeListeners() {
     const quantityInputs = document.querySelectorAll('.item-quantity');
     quantityInputs.forEach(input => {
@@ -56,7 +52,6 @@ function attachQuantityChangeListeners() {
 function handleQuantityChange(event) {
     const value = Number(event.target.value);
 
-    // Only update if quantity is greater than 0
     if (value > 0) {
         updateCartCount();
     } else {
@@ -73,7 +68,6 @@ document.addEventListener('click', (event) => {
 });
 
 
-// For the checkout page, load items from localStorage
 document.addEventListener('DOMContentLoaded', () => {
     if (window.location.pathname.includes('farmerssquare_checkout.html')) {
         loadCheckoutItems();
@@ -86,17 +80,19 @@ function loadCheckoutItems() {
 
     const cartContainer = document.querySelector('.cart-item-container');
     console.log(`${cartContainer}`);
-    cartItems.forEach(item => {
+    cartItems.forEach((item, index) => {
         const cartItemDiv = document.createElement('div');
         cartItemDiv.className = 'cart-item';
         cartItemDiv.innerHTML = `
+            <input type="checkbox" class="delete-checkbox" data-index="${index}">
             <label><img src="${item.image}" alt="${item.description}" style="width: 50px; height: 50px;"></label>
             <span class="item-name">${item.description}</span>
-            <span class="quantity-labelr ">Quantity:</span>
+            <span class="quantity-labelr">Quantity:</span>
             <input type="number" class="quantity-input" min="1" value="${item.quantity}">
             <span class="price">${item.price}</span>
         `;
         cartContainer.appendChild(cartItemDiv);
     });
+    
 }
 
