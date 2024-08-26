@@ -1,4 +1,4 @@
-async function getDepartmentProducts() {
+async function getDepartmentProducts(n) {
     try {
         const response = await fetch('http://localhost:3000/');
         if (!response.ok) {
@@ -6,11 +6,13 @@ async function getDepartmentProducts() {
         }
         const data = await response.json();
         console.log('Fetched data:', data); // Log the fetched data to see its structure
+        
+        //console.log(`${JSON.stringify(data.departments[0].products)}`);
 
-        // Extract products from the Bakery department
+        console.log(`${data.departments}`);
+        // Extract and combine products from each department
         if (data && Array.isArray(data.departments)) {
-            const Products = data.departments[1].products; // Assuming Bakery is at index 3
-            console.log('Products:', Products);
+            const Products = data.departments[1].products;
             return Products;
         } else {
             throw new Error('Unexpected data format');
@@ -21,25 +23,17 @@ async function getDepartmentProducts() {
     }
 }
 
+getDepartmentProducts();
+
+
 document.addEventListener('DOMContentLoaded', async () => {
     const products = await getDepartmentProducts();
+    console.log('Products:', products); // Log the products before rendering
+
     if (!Array.isArray(products)) {
         console.error('Expected an array but got:', products);
         return;
     }
-
-    // Load stored quantities from localStorage
-    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-
-    // Adjust product quantities based on localStorage
-    products.forEach(product => {
-        const storedItem = cartItems.find(item => item.description === product.description);
-        if (storedItem) {
-            product.quantity = storedItem.quantity;
-        } else {
-            product.quantity = 0; // Default to 0 if not in localStorage
-        }
-    });
 
     renderProducts(products);
     attachQuantityChangeListeners(); // Ensure listeners are attached after rendering
@@ -48,9 +42,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     updateItemCount(cartItems.length);
 });
 
+
+
 function createProductRow(product) {
     console.log('Product:', product); // Log the product to see its properties and types
-
+    
     // Ensure price is a number before calling toFixed
     const price = typeof product.price === 'number' ? product.price.toFixed(2) : 'N/A';
 
@@ -63,6 +59,8 @@ function createProductRow(product) {
         </td>
     `;
 }
+
+
 
 function renderProducts(products) {
     console.log('Rendering products:', products); // Log the products before rendering
@@ -85,7 +83,6 @@ function renderProducts(products) {
     console.log('Rows to be inserted:', rows); // Log the generated HTML rows
     tableContainer.innerHTML = rows;
 }
-
 function attachQuantityChangeListeners() {
     const quantityInputs = document.querySelectorAll('.item-quantity');
     quantityInputs.forEach(input => {
