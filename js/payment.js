@@ -112,9 +112,44 @@ function updateTotalAmount() {
 
 document.addEventListener('DOMContentLoaded', () => {
     if (window.location.pathname.includes('farmerssquare_checkout.html')) {
-        loadCheckoutItems(); // Ensure this is called to load items first
         calculatePayment();
         setupQuantityChangeListeners(); // Set up listeners after items are loaded
         setupDeliveryTypeChangeListener();
     }
+});
+
+
+document.querySelector('.payment-button').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Capture form data
+    const firstName = document.querySelector('input[placeholder="First Name"]').value.trim();
+    const lastName = document.querySelector('input[placeholder="Last Name"]').value.trim();
+    const email = document.querySelector('input[placeholder="Email Address"]').value.trim();
+    const streetAddress = document.querySelector('input[placeholder="Street Address"]').value.trim();
+    const phoneNumber = document.querySelector('input[placeholder="Phone Number"]').value.trim();
+    const ccNumber = document.querySelector('input[placeholder="Credit Card Number"]').value.trim();
+    const expDate = document.querySelector('input[placeholder="Exp. Date"]').value.trim();
+    const cvv = document.querySelector('input[placeholder="CVV"]').value.trim();
+    const billingAddress = document.querySelector('input[placeholder="Billing Address"]').value.trim();
+
+    // Check if any of the required fields are empty
+    if (!firstName || !lastName || !email || !streetAddress || !phoneNumber || !ccNumber || !expDate || !cvv || !billingAddress) {
+        alert('Please complete all required contact and billing information before proceeding to payment.');
+        return; // Stop execution if any field is empty
+    }
+
+    // Store the data in localStorage
+    localStorage.setItem('firstName', firstName);
+    localStorage.setItem('lastName', lastName);
+    localStorage.setItem('email', email);
+    localStorage.setItem('streetAddress', streetAddress);
+    localStorage.setItem('phoneNumber', phoneNumber);
+    localStorage.setItem('ccNumber', ccNumber);
+    localStorage.setItem('expDate', expDate);
+    localStorage.setItem('cvv', cvv);
+    localStorage.setItem('billingAddress', billingAddress);
+
+    // Redirect to the order completion page
+    window.location.href = 'farmerssquare_ordercomplete.html';
 });

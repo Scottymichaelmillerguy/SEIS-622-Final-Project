@@ -71,16 +71,20 @@ document.addEventListener('click', (event) => {
 document.addEventListener('DOMContentLoaded', () => {
     if (window.location.pathname.includes('farmerssquare_checkout.html')) {
         loadCheckoutItems();
+        attachDeleteButtonListener();
     }
 });
 
 function loadCheckoutItems() {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-    console.log(`${JSON.stringify(cartItems)}`);
 
     const cartContainer = document.querySelector('.cart-item-container');
-    console.log(`${cartContainer}`);
-    cartItems.forEach((item, index) => {
+    cartContainer.innerHTML = ''; // Clear existing items
+
+    // Filter out items with a quantity of 0
+    const nonZeroItems = cartItems.filter(item => item.quantity > 0);
+
+    nonZeroItems.forEach((item, index) => {
         const cartItemDiv = document.createElement('div');
         cartItemDiv.className = 'cart-item';
         cartItemDiv.innerHTML = `
@@ -93,6 +97,78 @@ function loadCheckoutItems() {
         `;
         cartContainer.appendChild(cartItemDiv);
     });
-    
+
+    // After reloading items, recalculate the payment
+    calculatePayment();
 }
 
+
+function attachDeleteButtonListener() {
+    const deleteButton = document.querySelector('.delete-button');
+    deleteButton.addEventListener('click', () => {
+        const checkboxes = document.querySelectorAll('.delete-checkbox');
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+        checkboxes.forEach((checkbox, index) => {
+            if (checkbox.checked) {
+                // Set the item quantity to 0
+                cartItems[index].quantity = 0;
+            }
+        });
+
+        // Filter out items with quantity 0
+        const updatedCartItems = cartItems.filter(item => item.quantity > 0);
+
+        // Save updated cart to localStorage
+        localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+
+        // Reload the cart items on the page
+        reloadCartItems();
+    });
+}
+
+function reloadCartItems() {
+    const cartContainer = document.querySelector('.cart-item-container');
+    cartContainer.innerHTML = ''; // Clear existing items
+
+    const updatedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    // Filter out items with a quantity of 0
+    const nonZeroItems = updatedCartItems.filter(item => item.quantity > 0);
+
+    nonZeroItems.forEach((item, index) => {
+        const cartItemDiv = document.createElement('div');
+        cartItemDiv.className = 'cart-item';
+        cartItemDiv.innerHTML = `
+            <input type="checkbox" class="delete-checkbox" data-index="${index}">
+            <label><img src="${item.image}" alt="${item.description}" style="width: 50px; height: 50px;"></label>
+            <span class="item-name">${item.description}</span>
+            <span class="quantity-label">Quantity:</span>
+            <input type="number" class="quantity-input" min="1" value="${item.quantity}">
+            <span class="price">${item.price}</span>
+        `;
+        cartContainer.appendChild(cartItemDiv);
+    });
+
+    // After reloading items, recalculate the payment
+    calculatePayment();
+}
+
+
+document.querySelector('#SameAddress').addEventListener('change', function() {
+    const streetAddress = document.querySelector('input[placeholder="Street Address"]').value;
+    const billingAddressInput = document.querySelector('input[placeholder="Billing Address"]');
+    
+    if (this.checked) {
+        billingAddressInput.value = streetAddress; // Populate the billing address
+        billingAddressInput.disabled = true; // Disable the input to prevent manual editing
+    } else {
+        billingAddressInput.value = ''; // Clear the billing address
+        billingAddressInput.disabled = false; // Enable the input for manual editing
+    }
+});
+
+document.querySelector('#delivery_type').addEventListener('change', function() {
+    const deliveryType = this.value;
+    localStorage.setItem('deliveryType', deliveryType);
+});
