@@ -6,6 +6,7 @@
     <title>Farmers Square Main Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles_home.css">
+    <script src="js/home.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,7 +24,10 @@
 
 <br/>
 
+<section id="weekly-deals-section"></section>
+
 <section>
+    
     <h2>Weekly Deals</h2>
 
     <!-- Slideshow container -->
@@ -80,37 +84,6 @@
         <button class="add-to-cart-button">Add to Cart</button>
     </div>
 </section>
-
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-    showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-    showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    }
-</script>
 
 <br/>
 <br/>
