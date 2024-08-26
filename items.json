@@ -145,7 +145,7 @@
           "itemId": "20",
           "image": "products/meats/beef-rib-eye-steak.png",
           "description": "Beef Rib Eye Steak",
-          "price": 13.99,
+          "price": 9.99,
           "quantity": 0
         },
         {
@@ -234,7 +234,7 @@
           "itemId": "32",
           "image": "products/pantry/spicy-squiggly-.png",
           "description": "Spicy Squiggly Knife Cut Noodles",
-          "price": 4.99,
+          "price": 3.99,
           "quantity": 0
         },
         {
@@ -344,7 +344,7 @@
           "itemId": "47",
           "image": "products/bakery/brioche-style-liege-waffles.png",
           "description": "Brioche Style Liege Waffles",
-          "price": 3.99,
+          "price": 2.99,
           "quantity": 0
         },
         {
@@ -503,7 +503,7 @@
           "itemId": "69",
           "image": "products/dairy-and-eggs/butter-quarters-unsalted.png",
           "description": "Butter Quarters Unsalted",
-          "price": 3.99,
+          "price": 3.25,
           "quantity": 0
         },
         {
@@ -606,7 +606,7 @@
           "itemId": "83",
           "image": "products/produce/yellow-peaches.png",
           "description": "Yellow Peaches",
-          "price": 3.49,
+          "price": 2.99,
           "quantity": 0
         },
         {

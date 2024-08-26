@@ -14,6 +14,8 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
+  justify-content: center;
+  align-items: center;
   font-family: Arial, sans-serif;
 }
 
@@ -113,6 +115,10 @@ h2 {
   border-radius: 3px 0 0 3px;
 }
 
+.prev {
+  left: 0;
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
@@ -169,8 +175,8 @@ h2 {
 }
 
 .slideshow_image {
-  height: inherit;
-  width: inherit;
+  height: 400px;
+  width: 400px;
 }
 
 .department_image {
@@ -241,4 +247,26 @@ footer {
 }
 .footer-year, .creator-names {
   margin-bottom: 5px;
+}
+
+/* Center the button container and set its width */
+section {
+  text-align: center;
+}
+
+/* Style the button */
+.add-to-cart-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 25%;
+}
+
+/* Optional: add a hover effect */
+.add-to-cart-button:hover {
+  background-color: #333;
 }
