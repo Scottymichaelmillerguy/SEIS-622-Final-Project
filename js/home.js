@@ -24,14 +24,22 @@ async function fetchItems() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const products = await fetchItems();
-    console.log('Products:', products); // Log the products before rendering
+    try {
+        const products = await fetchItems();
+        console.log('Products:', products); // Log the products before rendering
 
-    if (!Array.isArray(products)) {
-        console.error('Expected an array but got:', products);
-        return;
+        if (!Array.isArray(products)) {
+            console.error('Expected an array but got:', products);
+            return;
+        }
+
+        const addToCartButton = document.querySelector('.add-to-cart-button');
+        addToCartButton.addEventListener('click', () => {
+            addCurrentSlideToCart();
+        });
+    } catch (error) {
+        console.error('Error initializing the page:', error);
     }
-
 });
 
 let slideIndex = 1;
@@ -62,3 +70,96 @@ for (i = 0; i < dots.length; i++) {
 slides[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += " active";
 }
+
+function addCurrentSlideToCart() {
+    // Ensure slideIndex is defined and within bounds
+    if (typeof slideIndex === 'undefined' || slideIndex < 1) {
+        console.error('slideIndex is not defined or out of bounds.');
+        return;
+    }
+
+    let slides = document.getElementsByClassName("mySlides");
+    if (slideIndex - 1 >= slides.length) {
+        console.error('slideIndex is out of range.');
+        return;
+    }
+
+    let currentSlide = slides[slideIndex - 1];
+    if (!currentSlide) {
+        console.error('No slide found at this index:', slideIndex - 1);
+        return;
+    }
+
+    // Get the description from the .text div
+    let descriptionElement = currentSlide.querySelector('.text');
+    if (!descriptionElement) {
+        console.error('No element with class "text" found in the current slide.');
+        return;
+    }
+    let description = descriptionElement.textContent.trim();
+
+    // Get the price from the .promotion div
+    let promotionElement = currentSlide.querySelector('.promotion');
+    if (!promotionElement) {
+        console.error('No element with class "promotion" found in the current slide.');
+        return;
+    }
+    let promotionText = promotionElement.textContent;
+    let priceMatch = promotionText.match(/\$[0-9.]+/);
+    if (!priceMatch) {
+        console.error('No price found in the promotion text:', promotionText);
+        return;
+    }
+    let price = priceMatch[0];
+
+    // Get the image source
+    let imageElement = currentSlide.querySelector('img.slideshow_image');
+    if (!imageElement) {
+        console.error('No image with class "slideshow_image" found in the current slide.');
+        return;
+    }
+    let imageSrc = imageElement.src;
+
+    console.log(`Description: ${description}`);
+    console.log(`Price: ${price}`);
+    console.log(`Image Source: ${imageSrc}`);
+
+    // Load existing cart items from local storage
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    
+    // Check if the item is already in the cart
+    const itemIndex = cartItems.findIndex(item => item.description === description);
+
+    if (itemIndex >= 0) {
+        // If the item is already in the cart, increase the quantity
+        cartItems[itemIndex].quantity += 1;
+    } else {
+        // Otherwise, add the new item to the cart with quantity 1
+        const newItem = {
+            image: imageSrc,
+            description: description,
+            price: price,
+            quantity: 1
+        };
+        cartItems.push(newItem);
+    }
+
+    // Save the updated cart back to local storage
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+    // Update the cart icon or other UI elements if necessary
+    updateItemCount(cartItems.length);
+    
+    console.log('Added to cart:', description);
+}
+
+
+function updateItemCount(count) {
+    const cartIcon = document.querySelector('.cart-icon .item-count');
+    if (cartIcon) {
+        cartIcon.textContent = count;
+    }
+}
+
+
+
