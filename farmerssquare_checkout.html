@@ -27,34 +27,35 @@
     <section id="ReturnButton">
         <a href="farmerssquare.html" class="button"> Return for more items</a>
     </section>
-    <div class="cart-item"></div>
-    <section id="Cart">
+    <div class="content">
+    <div class="cart-section">
         <section id="Cart">
             <h2>Your Items Cart:</h2>
-            <div class="cart-item-container"></div> <!-- Ensure this class is correctly added -->
+            <div class="cart-item-container"></div>
+            <button class="delete-button" type="button">Delete</button>
         </section>
-        <button class="delete-button" type="button">Delete</button>
-        <br></br>
-    </section>
-    <div class="delivery-type">
-        <label for="delivery_type">
-            <h3>Delivery Type:</h3>
-        </label>
-        <select name="delivery" id="delivery_type">
-            <option value="">--Please choose a delivery type--</option>
-            <option value="shipping">Shipping</option>
-            <option value="pickup">Pickup</option>
-        </select>
     </div>
-    <br></br>
-    <section id="Totals">
-        <h2>Order Total</h2>
-        </br>
-        <p class="item-total">Item Total: (Add Amount Here)</p>
-        <p class="tax-amount">Tax Amount: </p>
-        <p class="shipping-cost">Shipping Costs: (Add Amount Here)</p>
-        <p class="total-amount">Total Payment Amount: (Add Amount Here)</p>
-    </section>
+    <div class="side-section">
+        <div class="delivery-type">
+            <label for="delivery_type">
+                <h3>Delivery Type:</h3>
+            </label>
+            <select name="delivery" id="delivery_type">
+                <option value="">--Please choose a delivery type--</option>
+                <option value="shipping">Shipping</option>
+                <option value="pickup">Pickup</option>
+            </select>
+        </div>
+        <section id="Totals">
+            <h2>Order Total</h2>
+            <p class="item-total">Item Total: (Add Amount Here)</p>
+            <p class="tax-amount">Tax Amount: </p>
+            <p class="shipping-cost">Shipping Costs: (Add Amount Here)</p>
+            <p class="total-amount">Total Payment Amount: (Add Amount Here)</p>
+        </section>
+    </div>
+</div>
+
     <form>
         <div class="form-container">
             <fieldset>

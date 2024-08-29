@@ -97,9 +97,13 @@ footer {
     cursor: pointer;
 }
 
-#PaymentButton {
-    text-align: right;
-    border: none;
+.payment-button {
+    padding: 15px 30px; 
+    font-size: 16px; 
+    border: 2px solid #000; 
+    background-color: #eaeaea; 
+    cursor: pointer;
+    border-radius: 5px; 
 }
 
 .paymentbtn-container {
@@ -107,36 +111,51 @@ footer {
     padding: 10px;
 }
 
-.delivery-type {
-    position: relative;
-    right: 0;
-    margin-top: 20px; /* Adjust the margin as needed */
+
+.content {
     display: flex;
-    align-items: center;
-    margin-right: 5px;
-    gap: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cart-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.side-section {
+    flex: 0 0 250px; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.delivery-type {
+    margin: 0;
+    margin-top:50px;
 }
 
 #Totals {
-    position: relative;
-    right: 0;
-    margin-top: 20px; /* Adjust to ensure spacing below delivery type */
-    line-height: 1.55;
-    border-style: solid;
-    border-width: thin;
-    padding: 10px;
-    width: 200px; /* Adjust the width as needed */
+    margin: 0;
+    margin-top: 325px;
+    padding: 15px;
+    border: 2px solid black; 
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+    width: 250px; 
 }
 
+
+
 .form-container {
-    margin-top: 20px; /* Ensures space between #Totals and form-container */
+    margin-top: 20px; 
     margin-bottom: 25px;
     line-height: 2;
 }
 
 #contact_information {
     padding-left: 55px;
-    margin-top: 30px;
+    margin-top: 0x;
 }
 
 #billing_information {
