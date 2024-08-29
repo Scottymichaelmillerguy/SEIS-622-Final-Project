@@ -7,8 +7,6 @@ async function getDepartmentProducts(n) {
         const data = await response.json();
         console.log('Fetched data:', data); // Log the fetched data to see its structure
         
-        //console.log(`${JSON.stringify(data.departments[0].products)}`);
-
         console.log(`${data.departments}`);
         // Extract and combine products from each department
         if (data && Array.isArray(data.departments)) {
@@ -23,30 +21,32 @@ async function getDepartmentProducts(n) {
     }
 }
 
-getDepartmentProducts();
-
-
 document.addEventListener('DOMContentLoaded', async () => {
     const products = await getDepartmentProducts();
-    console.log('Products:', products); // Log the products before rendering
-
     if (!Array.isArray(products)) {
         console.error('Expected an array but got:', products);
         return;
     }
 
+    // Load stored quantities from localStorage
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    // Update the product quantities from cartItems if they exist
+    products.forEach(product => {
+        const storedItem = cartItems.find(item => item.description === product.description);
+        product.quantity = storedItem ? storedItem.quantity : 0; // Preserve existing quantities or set to 0
+    });
+
     renderProducts(products);
     attachQuantityChangeListeners(); // Ensure listeners are attached after rendering
 
     // Update itemCount and display on cart icon
-    updateItemCount(cartItems.length);
+    updateItemCount(cartItems.reduce((sum, item) => sum + item.quantity, 0));
 });
-
-
 
 function createProductRow(product) {
     console.log('Product:', product); // Log the product to see its properties and types
-    
+
     // Ensure price is a number before calling toFixed
     const price = typeof product.price === 'number' ? product.price.toFixed(2) : 'N/A';
 
@@ -59,8 +59,6 @@ function createProductRow(product) {
         </td>
     `;
 }
-
-
 
 function renderProducts(products) {
     console.log('Rendering products:', products); // Log the products before rendering
@@ -83,6 +81,7 @@ function renderProducts(products) {
     console.log('Rows to be inserted:', rows); // Log the generated HTML rows
     tableContainer.innerHTML = rows;
 }
+
 function attachQuantityChangeListeners() {
     const quantityInputs = document.querySelectorAll('.item-quantity');
     quantityInputs.forEach(input => {
@@ -119,8 +118,8 @@ function handleQuantityChange(event) {
     // Save updated cartItems to localStorage
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
-    // Update itemCount and display on cart icon
-    updateItemCount(cartItems.length);
+     // Update itemCount and display on cart icon
+     updateItemCount(cartItems.reduce((sum, item) => sum + item.quantity, 0));
 }
 
 function updateItemCount(count) {
