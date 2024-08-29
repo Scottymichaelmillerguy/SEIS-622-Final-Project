@@ -18,7 +18,7 @@ async function fetchItems() {
         } // Return products
 
     } catch (error) {
-        console.error('Error fetching items:', error);
+        console.error(error);
         return []; // Return empty array if error occurs
     }
 }
@@ -34,12 +34,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         const addToCartButton = document.querySelector('.add-to-cart-button');
+
         addToCartButton.addEventListener('click', () => {
             addCurrentSlideToCart();
         });
+
+         // Load existing cart items from localStorage
+         let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+         // Calculate the total quantity of items in the cart
+         const totalItemCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+ 
+         // Update the cart icon with the total item count
+         updateItemCount(totalItemCount);
     } catch (error) {
         console.error('Error initializing the page:', error);
     }
+
+
 });
 
 let slideIndex = 1;
@@ -148,17 +160,30 @@ function addCurrentSlideToCart() {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
     // Update the cart icon or other UI elements if necessary
-    updateItemCount(cartItems.length);
+    updateItemCount(cartItems.reduce((sum, item) => sum + item.quantity, 0));
     
     console.log('Added to cart:', description);
 }
 
 
 function updateItemCount(count) {
-    const cartIcon = document.querySelector('.cart-icon .item-count');
-    if (cartIcon) {
-        cartIcon.textContent = count;
+    const cartIcon = document.querySelector('.chekout_button img');
+
+    let countElement = document.querySelector('.cart-count');
+    if (!countElement) {
+        countElement = document.createElement('div');
+        countElement.className = 'cart-count';
+        countElement.style.position = 'absolute';
+        countElement.style.top = '10px';
+        countElement.style.right = '10px';
+        countElement.style.backgroundColor = 'red';
+        countElement.style.color = 'white';
+        countElement.style.borderRadius = '50%';
+        countElement.style.padding = '5px';
+        countElement.style.fontSize = '12px';
+        cartIcon.parentElement.appendChild(countElement);
     }
+    countElement.textContent = count;
 }
 
 
