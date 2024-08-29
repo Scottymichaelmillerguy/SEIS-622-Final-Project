@@ -309,8 +309,8 @@
         },
         {
           "itemId": "43",
-          "image": "products/pantry/chocolate-hazelnut-spread.png",
-          "description": "Chocolate Hazelnut Spread",
+          "image": "products/pantry/flakes-strawberry-cereal.png",
+          "description": "Flakes & Strawberry Cereal",
           "price": 3.99,
           "quantity": 0
         },
@@ -323,9 +323,9 @@
         },
         {
           "itemId": "45",
-          "image": "products/pantry/organic-coconut-flakes.png",
-          "description": "Organic Coconut Flakes",
-          "price": 2.99,
+          "image": "products/pantry/peanut-butter-cocoa-crunch.png",
+          "description": "Peanut Butter & Cocoa Crunch Cereal",
+          "price": 3.49,
           "quantity": 0
         }
       ]

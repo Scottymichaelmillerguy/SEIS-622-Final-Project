@@ -31,21 +31,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Load stored quantities from localStorage
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-    // Adjust product quantities based on localStorage
+    // Update the product quantities from cartItems if they exist
     products.forEach(product => {
         const storedItem = cartItems.find(item => item.description === product.description);
-        if (storedItem) {
-            product.quantity = storedItem.quantity;
-        } else {
-            product.quantity = 0; // Default to 0 if not in localStorage
-        }
+        product.quantity = storedItem ? storedItem.quantity : 0; // Preserve existing quantities or set to 0
     });
 
     renderProducts(products);
     attachQuantityChangeListeners(); // Ensure listeners are attached after rendering
 
     // Update itemCount and display on cart icon
-    updateItemCount(cartItems.length);
+    updateItemCount(cartItems.reduce((sum, item) => sum + item.quantity, 0));
 });
 
 function createProductRow(product) {
@@ -122,8 +118,8 @@ function handleQuantityChange(event) {
     // Save updated cartItems to localStorage
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
-    // Update itemCount and display on cart icon
-    updateItemCount(cartItems.length);
+     // Update itemCount and display on cart icon
+     updateItemCount(cartItems.reduce((sum, item) => sum + item.quantity, 0));
 }
 
 function updateItemCount(count) {

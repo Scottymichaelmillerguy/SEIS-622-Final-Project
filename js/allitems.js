@@ -7,11 +7,19 @@ async function getDepartmentProducts() {
         const data = await response.json();
         console.log('Fetched data:', data); // Log the fetched data to see its structure
 
-        // Extract products from the Bakery department
+        // Extract products from all departments
         if (data && Array.isArray(data.departments)) {
-            const Products = data.departments[4].products; // Assuming Bakery is at index 3
-            console.log('Products:', Products);
-            return Products;
+            let allProducts = [];
+
+            // Loop through each department and collect products
+            data.departments.forEach(department => {
+                if (department.products && Array.isArray(department.products)) {
+                    allProducts = allProducts.concat(department.products);
+                }
+            });
+
+            console.log('All Products:', allProducts);
+            return allProducts;
         } else {
             throw new Error('Unexpected data format');
         }
@@ -31,17 +39,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Load stored quantities from localStorage
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-    // Update the product quantities from cartItems if they exist
+    // Adjust product quantities based on localStorage
     products.forEach(product => {
         const storedItem = cartItems.find(item => item.description === product.description);
-        product.quantity = storedItem ? storedItem.quantity : 0; // Preserve existing quantities or set to 0
+        if (storedItem) {
+            product.quantity = storedItem.quantity;
+        } else {
+            product.quantity = 0; // Default to 0 if not in localStorage
+        }
     });
 
     renderProducts(products);
     attachQuantityChangeListeners(); // Ensure listeners are attached after rendering
 
     // Update itemCount and display on cart icon
-    updateItemCount(cartItems.reduce((sum, item) => sum + item.quantity, 0));
+    updateItemCount(cartItems.length);
 });
 
 function createProductRow(product) {
@@ -118,8 +130,8 @@ function handleQuantityChange(event) {
     // Save updated cartItems to localStorage
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
-     // Update itemCount and display on cart icon
-     updateItemCount(cartItems.reduce((sum, item) => sum + item.quantity, 0));
+    // Update itemCount and display on cart icon
+    updateItemCount(cartItems.length);
 }
 
 function updateItemCount(count) {
