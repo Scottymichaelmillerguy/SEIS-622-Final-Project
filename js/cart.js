@@ -79,9 +79,8 @@ function loadCheckoutItems() {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
     const cartContainer = document.querySelector('.cart-item-container');
-    cartContainer.innerHTML = ''; // Clear existing items
+    cartContainer.innerHTML = ''; 
 
-    // Filter out items with a quantity of 0
     const nonZeroItems = cartItems.filter(item => item.quantity > 0);
 
     nonZeroItems.forEach((item, index) => {
@@ -98,7 +97,6 @@ function loadCheckoutItems() {
         cartContainer.appendChild(cartItemDiv);
     });
 
-    // After reloading items, recalculate the payment
     calculatePayment();
 }
 
@@ -111,29 +109,25 @@ function attachDeleteButtonListener() {
 
         checkboxes.forEach((checkbox, index) => {
             if (checkbox.checked) {
-                // Set the item quantity to 0
                 cartItems[index].quantity = 0;
             }
         });
 
-        // Filter out items with quantity 0
         const updatedCartItems = cartItems.filter(item => item.quantity > 0);
 
-        // Save updated cart to localStorage
         localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
 
-        // Reload the cart items on the page
         reloadCartItems();
     });
 }
 
 function reloadCartItems() {
     const cartContainer = document.querySelector('.cart-item-container');
-    cartContainer.innerHTML = ''; // Clear existing items
+    cartContainer.innerHTML = ''; 
 
     const updatedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-    // Filter out items with a quantity of 0
+    
     const nonZeroItems = updatedCartItems.filter(item => item.quantity > 0);
 
     nonZeroItems.forEach((item, index) => {
@@ -150,8 +144,8 @@ function reloadCartItems() {
         cartContainer.appendChild(cartItemDiv);
     });
 
-    // After reloading items, recalculate the payment
     calculatePayment();
+    loadCheckoutItems();
 }
 
 
@@ -160,11 +154,11 @@ document.querySelector('#SameAddress').addEventListener('change', function() {
     const billingAddressInput = document.querySelector('input[placeholder="Billing Address"]');
     
     if (this.checked) {
-        billingAddressInput.value = streetAddress; // Populate the billing address
-        billingAddressInput.disabled = true; // Disable the input to prevent manual editing
+        billingAddressInput.value = streetAddress; 
+        billingAddressInput.disabled = true; 
     } else {
-        billingAddressInput.value = ''; // Clear the billing address
-        billingAddressInput.disabled = false; // Enable the input for manual editing
+        billingAddressInput.value = ''; 
+        billingAddressInput.disabled = false; 
     }
 });
 
